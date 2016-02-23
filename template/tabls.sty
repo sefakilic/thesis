@@ -75,11 +75,11 @@
       {\@mystrutcr}}
 
 \def\@mystrutcr{% \@skip@bove is really the parameter for skip below here
-  \ifdim\@skip@bove>\z@ \advance\@arstdepth\@skip@bove \global\@skip@bove\z@\fi 
+  \ifdim\@skip@bove>\z@ \advance\@arstdepth\@skip@bove \global\@skip@bove\z@\fi
   \advance\@arstheight\@tarlinesep \advance\@arstdepth\@tarlinesep
   \vrule \@height\@arstheight \@depth\@arstdepth \@width\z@
   \global\@arstheight\ht\@arstrutbox \global\@arstdepth\dp\@arstrutbox
-  \ifnum\z@=`{\fi}\cr  
+  \ifnum\z@=`{\fi}\cr
   \ifdim\@skip@bove<\z@ \noalign{\vskip\@skip@bove \global\@skip@bove\z@}\fi}
 
 % Simulate \crcr at the end of the table, assuming that we are not in
@@ -94,7 +94,7 @@
 \expandafter\let\csname endtabular*\endcsname=\endtabular
 
 \def\endarray{\ifvmode\csname crcr\endcsname % just do \crcr if \\ given
-  \else \\[\z@ \global\advance\@arstdepth-\@otarlinesep]% 
+  \else \\[\z@ \global\advance\@arstdepth-\@otarlinesep]%
   \fi\egroup\@unrecurse\egroup}
 
 % Put \@seesize...\@rememsize in all preamble templates
@@ -207,7 +207,7 @@
 %  \extrarulesep still partially in effect--extra space will still be added
 %  around hlines, but it may be taken up by very tall or very deep table
 %  entries; thus text may still touch the lines.  Because of the speed penalty,
-%  if your computer is slow, it is probably best to omit the TABLS option 
+%  if your computer is slow, it is probably best to omit the TABLS option
 %  until producing a final copy.
 %
 %  (2.2) \endtabular* is defined (it was left out before. oops!)

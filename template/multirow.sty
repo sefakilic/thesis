@@ -125,14 +125,14 @@
 % area. This can be solved by putting the \multirow is the last row with a
 % negative nrows value.
 % Example:
-%  
+%
 %  \begin{tabular}{l>{\columncolor{yellow}}l}
 %    aaaa & \\
 %    cccc & \\
 %    dddd & \multirow{-3}*{bbbb}\\
 %  \end{tabular}
 %
-\def\multirowsetup{\raggedright} 
+\def\multirowsetup{\raggedright}
 \def\multirow#1{\relax\@ifnextchar
   [{\@multirow{#1}}{\@multirow{#1}[0]}}
 \def\@multirow#1[#2]#3{\@ifnextchar [{\@xmultirow{#1}[#2]{#3}}%

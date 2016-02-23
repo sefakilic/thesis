@@ -8,16 +8,16 @@
 %% The original source files were:
 %%
 %% classes.dtx  (with options: `report')
-%% 
+%%
 %% This is a generated file.
-%% 
+%%
 %% Copyright 1993 1994 1995 1996 1997 1998 1999
 %% The LaTeX3 Project and any individual authors listed elsewhere
 %% in this file.
-%% 
+%%
 %% This file is part of the LaTeX2e system.
 %% ----------------------------------------
-%% 
+%%
 %% It may be distributed under the terms of the LaTeX Project Public
 %% License, as described in lppl.txt in the base LaTeX distribution.
 %% Either version 1.0 or, at your option, any later version.
@@ -344,12 +344,12 @@
  \vspace*{20\p@}%
   {\parindent \z@ \raggedright \normalfont
     \ifnum \c@secnumdepth >\m@ne
-        \large \@chapapp\space \thechapter 
+        \large \@chapapp\space \thechapter
         \par\nobreak
  %       \vskip 20\p@
     \fi
     \interlinepenalty\@M
-    \large   #1\par\nobreak 
+    \large   #1\par\nobreak
   %  \vskip 40\p@
   }}
 \def\@schapter#1{\if@twocolumn
@@ -609,7 +609,7 @@
     \begingroup
       \parindent \z@ \rightskip \@pnumwidth
       \parfillskip -\@pnumwidth
-      \leavevmode 
+      \leavevmode
       \advance\leftskip\@tempdima
       \hskip -\leftskip
       #1\nobreak\hfil \nobreak\hb@xt@\@pnumwidth{\hss #2}\par
