@@ -366,18 +366,26 @@ of motif-based transfer yield very similar results
 search promoter regions and define the putative target motif (direct transfer)
 provides results comparable to those obtained with other motif-based transfer
 methods and robust with respect to the specific threshold used to define the
-motif (Additional file 6). The use of MEME in direct discovery transfers to
-rediscover the TF-binding motif, which has been postulated to refine and better
-adapt the inferred motif to the target genome~\cite{habib2012functional}, does
-not provide significant improvements over the direct transfer. In fact, when
-performing motif discovery in the promoter region surrounding the identified
-sites, MEME may identify other genomic elements (e.g. Pribnow boxes) as the
-best motifs, decreasing the accuracy of the method. Performing motif inference
-on the identified sites surrounded by random promoter regions prevents this
-effect but does not yield a systematic improvement in PR-AUC values over the
-direct transfer. Finally, the mixed mode approach, which has been associated
-with enhanced specificity \cite{baumbach2010power, baumbach2009reliable}, did
-not yield a systematic improvement over direct transfer either.
+motif (Figure~\ref{fig:direct-transfer-alpha}). The use of MEME in direct
+discovery transfers to rediscover the TF-binding motif, which has been
+postulated to refine and better adapt the inferred motif to the target
+genome~\cite{habib2012functional}, does not provide significant improvements
+over the direct transfer. In fact, when performing motif discovery in the
+promoter region surrounding the identified sites, MEME may identify other
+genomic elements (e.g. Pribnow boxes) as the best motifs, decreasing the
+accuracy of the method. Performing motif inference on the identified sites
+surrounded by random promoter regions prevents this effect but does not yield a
+systematic improvement in PR-AUC values over the direct transfer. Finally, the
+mixed mode approach, which has been associated with enhanced
+specificity~\cite{baumbach2010power, baumbach2009reliable}, did not yield a
+systematic improvement over direct transfer either.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{figures/chapter3/direct-transfer-alpha}
+  \caption{}
+\label{fig:direct-transfer-alpha}
+\end{figure}
 
 \subsection{Predictive indicators of transfer accuracy}
 
@@ -417,8 +425,8 @@ with previous findings~\cite{yu2004annotation}, the accuracy of motif-transfer
 methods is expected to decrease sharply for LexA and other transcription
 factors that have significantly altered their binding specificity through
 evolution. In this context, DNA-binding domain sequence similarity provides a
-more accurate indicator of transfer efficiency than phylogeny (Additional file
-7).
+more accurate indicator of transfer efficiency than phylogeny
+(Figure~\ref{fig:phylogenetic-distance}).
 
 \begin{figure}
   \centering
@@ -439,13 +447,21 @@ more accurate indicator of transfer efficiency than phylogeny (Additional file
 \label{fig:protein-sequence-similarity}
 \end{figure}
 
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{figures/chapter3/phylogenetic-distance}
+  \caption{}
+\label{fig:phylogenetic-distance}
+\end{figure}
+
 The results that are shown in Figure~\ref{fig:protein-sequence-similarity} also
 indicate that DNA-binding domain sequence similarity correlates weakly with
 accuracy for network-based transfer methods. DNA-binding domain sequence
-similarity is a proxy for phylogenetic distance (Additional file 7), and the
-observed loss of accuracy of network-based transfer methods is hence congruent
-with decreased overlap in the components of regulatory networks for increasing
-phylogenetic distances \cite{venancio2009reconstructing, baumbach2010power,
+similarity is a proxy for phylogenetic distance
+(Figure~\ref{fig:phylogenetic-distance}), and the observed loss of accuracy of
+network-based transfer methods is hence congruent with decreased overlap in the
+components of regulatory networks for increasing phylogenetic
+distances~\cite{venancio2009reconstructing, baumbach2010power,
   price2007orthologous}. It is possible, however, to conceive of other measures
 that might function as predictive indices of transfer accuracy for
 network-based transfer methods. These methods rely on motif discovery
@@ -453,7 +469,7 @@ algorithms, like MEME, to infer the functional motif for the transcription
 factor in the target species, providing some theoretical bounds on expected
 properties of the inferred motifs. For instance, the information content (IC)
 of a TF-binding motif is known to correlate with the number of operons
-regulated by the TF \cite{schneider1986information}. Hence, if the size of the
+regulated by the TF~\cite{schneider1986information}. Hence, if the size of the
 regulatory network is assumed to remain relatively constant, we expect the IC
 of the inferred TF-binding motif to be similar to that observed in the
 reference species. In a similar vein, the distribution of information in a
@@ -614,9 +630,9 @@ pseudoreplicate is obtained by sampling, with replacement, $(1-\omega) \cdot N$
 sites from the known target collection and $\omega \cdot N$ sequences of length
 $L$ from the promoter region of the target genome (where $N$ and $L$ are,
 respectively, the number and width of sites in the known target collection)
-(Additional file 3). Noisy transfers were generated for 0.1, 0.25, 0.5 and 0.75
-values of $\omega$, simulating increasingly inefficient transfers. Permuted
-transfers were obtained by randomly sampling, without replacement, the columns
-of the known target motif. A transfer was considered successful if its PR-AUC
-was larger than two standard deviations above the mean PR-AUC value observed
-for permuted transfers.
+(Figure~\ref{fig:transfer-methods}). Noisy transfers were generated for 0.1,
+0.25, 0.5 and 0.75 values of $\omega$, simulating increasingly inefficient
+transfers. Permuted transfers were obtained by randomly sampling, without
+replacement, the columns of the known target motif. A transfer was considered
+successful if its PR-AUC was larger than two standard deviations above the mean
+PR-AUC value observed for permuted transfers.
