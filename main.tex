@@ -1,14 +1,25 @@
 \documentclass[12pt]{report}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{subcaption}
 \usepackage{graphicx}
 \usepackage{fullpage}
 \usepackage{lineno}
-\usepackage[numbers,sort]{natbib}
+\usepackage[numbers,sort&compress]{natbib}
 \usepackage{setspace}
 \usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage[hidelinks]{hyperref}
+\usepackage{wasysym}
+
+\newcommand*\rot{\rotatebox{90}}
+\newcommand*\x{\newmoon}
+\newcolumntype{C}{>{\centering\arraybackslash}p{1.5em}}
 
 \title{Comparative Genomics of Transcriptional Regulatory Networks in Bacteria}
 \author{Sefa Kılıç}
+
 
 \begin{document}
 
@@ -22,7 +33,7 @@
 
 %\include{chapters/chapter1}
 
-%\include{chapters/chapter2}
+\include{chapters/chapter2}
 
 \include{chapters/chapter3}
 
@@ -33,6 +44,6 @@
 \singlespacing
 \bibliographystyle{unsrt}
 % github.com/sefakilic/bib
-\bibliography{/Users/sefa/Dropbox/bib/bibliography}
+\bibliography{/home/sefa/Dropbox/bib/bibliography}
 
 \end{document}
