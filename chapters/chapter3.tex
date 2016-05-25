@@ -44,7 +44,7 @@ the direct transfer scheme is further elaborated by applying a motif discovery
 or optimization algorithm on a set of high-scoring sites from the target genome
 \cite{baumbach2009reliable, habib2012functional}. The alternative to TF-binding
 motif-based transfer is to assume conservation of gene content in the
-TRN.\@Regulon or “network transfer” is typically implemented through the
+TRN.\@ Regulon or “network transfer” is typically implemented through the
 detection of orthologs for genes in known regulated operons. The promoter
 regions of the corresponding operons in target genomes are then analyzed with a
 motif discovery tool to elicit the TF-binding motif
@@ -109,7 +109,7 @@ the global transcriptional regulators LexA and Fur
 originating database.}
 \label{tab:database-numbers}
 \centering
-\begin{tabular}{l l}
+\begin{tabular}{l r}
 \toprule
 Database & Number of binding sites \\
 \midrule
@@ -128,9 +128,9 @@ RegulonDB~\cite{salgado2013regulondb} & 2,147 \\
   experimentally validated TF-binding sites in each species.}
 \label{tab:number-of-species-pairs}
 
-\begin{tabular}{l l}
+\begin{tabular}{l r}
 \toprule
-Transcription factor & Number of species pairs \\
+TF & Number of species pairs \\
 \midrule
   Fur & 154 \\
   LexA & 134 \\
@@ -205,7 +205,7 @@ complicates the interpretation of transfer results.
 
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{figures/chapter3/transfer-evaluation-comparison}
+  \includegraphics[width=0.9\textwidth]{figures/chapter3/transfer-evaluation-comparison}
   \caption{Comparison of methods for the evaluation of TRN transfer. The plots
     show the histogram of Euclidean distance, KL divergence, ROC-AUC and PR-AUC
     values for simulated bidirectional transfers between 179 TF-specific
@@ -338,12 +338,11 @@ modes (Figure~\ref{fig:network-transfer-auc}).
   \includegraphics[width=\textwidth]{figures/chapter3/comparison-transfer-methods}
   \caption{Comparison of TRN transfer methods. The plots show the PR-AUC of
     bidirectional transfers between 179 TF-specific species pairs using
-    motif-based (\textit{direct transfer}, \textit{direct discovery with true
-      intergenic} and \textit{direct discovery with random intergenic}) and
-    transfer-based methods (\textit{ortholog}, \textit{COG} and
-    \textit{interaction} modes), as well as a mixed model integrating direct
-    transfer and the union of all network-based transfer methods. The results
-    obtained with a permutation of the target motif are shown for
+    motif-based (direct transfer, direct discovery with true intergenic and
+    direct discovery with random intergenic) and transfer-based methods
+    (ortholog, COG and interaction modes), as well as a mixed model integrating
+    direct transfer and the union of all network-based transfer methods. The
+    results obtained with a permutation of the target motif are shown for
     comparison. The x-axis denotes protein similarity as the BLOSUM62 score of
     the ungapped pair-wise alignment between reference and target TF protein
     sequences. PR-AUC values are normalized to the respective AUC of the known
@@ -355,8 +354,15 @@ modes (Figure~\ref{fig:network-transfer-auc}).
 
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{figures/chapter3/network-transfer-auc}
-  \caption{}
+  \includegraphics[width=0.9\textwidth]{figures/chapter3/network-transfer-auc}
+  \caption{Precision-recall curve for network transfer modes. The plot shows
+    the site search PR-AUC of network based transfers as a function of the
+    precision and recall of the regulation mapping process. Precision is
+    defined as the proportion of mapped genes belonging to the known target
+    motif (true positives) with respect to all mapped genes (true and false
+    positives). Recall is defined as the proportion of mapped genes belonging
+    to the known target motif (true positives) versus the all known target
+    motif genes (true positives and false negatives).}
 \label{fig:network-transfer-auc}
 \end{figure}
 
@@ -382,8 +388,18 @@ systematic improvement over direct transfer either.
 
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{figures/chapter3/direct-transfer-alpha}
-  \caption{}
+  \includegraphics[width=0.9\textwidth]{figures/chapter3/direct-transfer-alpha}
+  \caption{Precision-recall curve for direct transfer using different values of
+    the scaling factor $\alpha$. The plots show the PR-AUC of bidirectional
+    transfers between 179 TF-specific species pairs using the motif-based
+    direct transfer method as a function of protein sequence similarity. The
+    x-axis denotes protein similarity as the BLOSUM62
+    score~\cite{henikoff1992amino} of the ungapped pair-wise alignment between
+    reference and target TF protein sequences. PR-AUC values are normalized to
+    the respective AUC of the known target TF-binding motif to compensate for
+    the decreased search efficiency of low information content motifs. The
+    results obtained with a permutation of the target motif are shown for
+    comparison.}
 \label{fig:direct-transfer-alpha}
 \end{figure}
 
@@ -434,8 +450,8 @@ more accurate indicator of transfer efficiency than phylogeny
   \caption{Assessment of protein sequence similarity as a predictor of TRN
     transfer method accuracy. The plots show the PR-AUC of bidirectional
     transfers between 143 (66 LexA, 77 Fur) TF-specific species pairs using
-    motif-based (\textit{direct transfer}) and transfer-based methods
-    (\textit{ortholog mode}) as a function of TF protein sequence
+    motif-based (direct transfer) and transfer-based methods
+    (ortholog mode) as a function of TF protein sequence
     similarity. The results obtained with a permutation of the target motif are
     shown for comparison. The x-axis denotes protein similarity as the BLOSUM62
     score of the ungapped pair-wise alignment between reference and target TF
@@ -450,7 +466,14 @@ more accurate indicator of transfer efficiency than phylogeny
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/chapter3/phylogenetic-distance}
-  \caption{}
+  \caption{Box-plot of PR-AUC for motif-based (direct transfer) and
+    network-based (ortholog mode) transfer methods summarizing the results of
+    bidirectional transfers between 143 (66 LexA and 77 Fur) TF-specific
+    species pairs. The x-axis denotes the lowest (more specific) taxonomic
+    level shared by the two species. PR-AUC values are normalized to the
+    respective AUC of the known target TF-binding motif to compensate for the
+    decreased search efficiency of low information content motifs. The results
+    obtained with a permutation of the target motif are shown for comparison.}
 \label{fig:phylogenetic-distance}
 \end{figure}
 
@@ -496,7 +519,7 @@ this may also be true for IC and Gini values above 2.
   \caption{Assessment of IC (left) and Gini coefficient (right) as predictive
     indices of accuracy for network-based transfer methods. The plots show the
     distribution of PR-AUC from bidirectional transfers between 179 TF-specific
-    species pairs using network transfer (\textit{ortholog mode}), with respect
+    species pairs using network transfer (ortholog mode), with respect
     to each index. PR-AUC values are normalized to the respective AUC of the
     known target TF-binding motif to compensate for the decreased search
     efficiency of low information content motifs. IC and Gini coefficient
