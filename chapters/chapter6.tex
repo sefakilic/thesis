@@ -1,0 +1,357 @@
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{fullpage}
+\usepackage{lineno}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage[hidelinks]{hyperref}
+\usepackage{wasysym}
+\usepackage{mathptmx}  % Times New Roman font
+
+\def\labelitemi{--}
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n} % Reset mathcal font to default
+
+% \chapter{xxx}
+
+\graphicspath {{../}}
+
+\title{Conclusion}
+\date{}
+
+\begin{document}
+\linenumbers
+\doublespacing
+
+\maketitle
+
+Controlling the transcription initiation is the most economical way of gene
+regulation in Bacteria. Despite more than half a century of research, there are
+still many uncharacterized transcription factors even in most widely-studied
+bacterial species such as \textit{Escherichia coli} or \textit{Bacillus
+  subtilis}. Continuing research on bacterial transcriptional regulation will
+help to characterize the TFs not only in widely-studied model organisms but
+also others of clinical and agricultural importance. Also, it is important to
+investigate the relationship between the changes in the environmental
+conditions and the adaptation of the transcriptional regulation. The standard
+tool to study the evolution of transcriptional regulation is comparative
+genomics which has been used numerously to characterize TFs in several species
+and to study the evolution of TFs, their binding motifs and the regulon
+composition.
+
+The increasing amount of experimental data creates new opportunities for
+comparative genomics to analyze the transcriptional regulation in
+Bacteria. However, it also challenges steps of the comparative genomics
+pipeline: the data collection, transfer of knowledge from one species to
+another, and comparative analysis. This dissertation identifies the problems
+associated with each step and describes the research that attempts to solve
+them.
+
+\section{Problems}
+
+\subsection{The storage and organization of experimental data}
+
+The first step of the comparative genomics pipeline is the collection of
+experimentally verified TF binding site data. There are several issues with the
+existing databases compiling the published data.
+
+\begin{itemize}
+\item Existing TFBS databases usually mix the experimentally validated and
+  computationally predicted binding sites and do not provide functionality to
+  separate them clearly. The computational models built using the data in these
+  databases are prone to bias which could lead to inaccurate comparative
+  genomics analysis further down the pipeline.
+
+\item Existing databases are not comprehensive in terms of the data across the
+  entire Bacteria domain. Most databases are organism-specific and establish
+  their own standards and relying on them makes the data collection complicated
+  for comparative genomics analysis. Other databases that are not
+  organism-specific fail to provide up to date experimental data for Bacteria;
+  they have not been updated in several years and miss significant amount of
+  the data that has become available in recent years.
+
+\item The existing data available in these databases are not integrated with
+  the major biological sequence databases which could make it more
+  accessible. Also, given that some databases have not been updated recently,
+  there is no certainty that the data will be accessible in the long term.
+\end{itemize}
+
+\subsection{The methods for motif and regulon transfer}
+Following data collection is to transfer available TF binding information from
+one species to another. There has been two main approaches: motif-based and
+network-based methods where the former assumes the conservation of the TF
+binding motif and the latter is based on the conservation of the regulon
+composition.
+
+\begin{itemize}
+\item Although motif-based methods have been more commonly used, there are
+  applications of network-based methods which performed well to reconstruct the
+  TF regulon in target species. The lack of comprehensive TF binding site data
+  prevented the systematic assessment of the transfer methods so far.
+\end{itemize}
+
+\subsection{Comparative genomics}
+
+The final step of the pipeline is to compare predicted binding sites and
+regulons across all target species for evolutionary analysis of the TF regulation.
+
+\begin{itemize}
+\item The scarcity of the binding site data makes its aggregation from multiple
+  species critical for the accuracy of the analysis. The most important issue
+  with existing frameworks is the lack of ability to combine binding evidence
+  from multiple species in a systematic way in order to build a generic motif
+  to be used for site search. Especially for the analysis of species having
+  possibly different TF binding motifs, it is essential to include different
+  motifs that would be able to detect sites in each target genome.
+
+\item Existing frameworks limit the user to a set of preprocessed genomes
+  available in their systems. The lack of ability to analyze any genome of
+  interest prevents these frameworks from being used to characterize
+  transcriptional regulation in species with recently sequenced genomes.
+
+\item The likelihood of regulation of a given gene is usually tested with PSSM
+  scoring of its promoter region. The raw PSSM score, however, is difficult to
+  assess the confidence level of the detected site. A threshold has to be
+  defined in most cases which could lead to too many false negatives or false
+  positives.
+
+\item None of the existing comparative genomics platforms perform formal
+  ancestral state reconstruction to infer if the regulation is likely to have
+  existed in shared ancestors of target species. The lack of formal methods may
+  lead to inaccurate and not reproducible conclusions about the evolution of TF
+  regulation in species of interest.
+\end{itemize}
+
+\section{Results}
+
+\subsection{Development of a TFBS database}
+
+To capture the TF-DNA interaction data across all Bacteria domain, CollecTF, a
+database of experimentally validated binding sites was built. To ensure the
+data quality, CollecTF adopts a thorough process for the curation of
+publications that report evidence for TF binding and regulation of gene
+expression. In addition to in-house efforts for collecting data, it allows
+first-hand data submission from the experimental researchers. It provides fully
+customizable access to the stored data which can be browsed by TF and
+TF-family, taxonomy and experimental support. The available data is integrated
+with major biological sequence databases NCBI RefSeq and EMBL-EBI
+UniProtKB\-. CollecTF also generates GO annotations to formalize the relationship
+between a TF and the chromosomal DNA it binds and the genes upon which such
+binding has a transcriptional regulatory effect. Finally, the supporting experimental
+evidence is mapped to standardized Evidence Ontology terms.
+
+\subsection{Assessment of methods for motif and regulon transfer}
+
+The evaluation of motif transfer metrics showed that precision-recall (PR)
+area-under-the-curve (AUC) is a better measurement than widely-used receiver
+operating characteristic (ROC) AUC\@. The available transfer methods were
+benchmarked using the collected experimental binding site data. The results
+showed that motif-based methods that assume the conservation of the TF binding
+motif are consistently better at reconstructing the motif and regulon in target
+species than the network-based methods which assume the conservation of regulon
+composition. It was also found that the efficiency of the motif-based methods
+decrease sharply with the increasing phylogenetic distance.
+
+\subsection{Development of a comparative genomics framework}
+
+Leveraging the collected data and the benchmark of existing transfer methods,
+CGB, a comparative genomics framework for bacterial transcriptional regulation
+analysis was built. Unlike similar existing systems, it does not restrict the
+set of genomes that can be analyzed; any genome available at NCBI RefSeq
+database can be used for the analysis. In addition, CGB adopts a Bayesian
+approach to infer regulons in target genomes. Rather than reporting PSSM scores
+only, CGB computes posterior probability of regulation for each operon. It
+constructs orthologous groups of genes and performs ancestral state
+reconstruction for each orthologous group. In addition to results reported in a
+tabular format, the results are visualized as a heatmap where rows and columns
+correspond to orthologous groups and species, respectively. A given cell of the
+heatmap is colored based on the regulation state (regulation, not regulation or
+absence) of the corresponding gene. CGB is publicly available as a Python
+library and stand-alone tool with a graphical interface.
+
+The platform was tested by replicating the analysis of LexA regulation in
+Firmicutes and Actinobacteria. The analysis demonstrated the importance of
+combining TF binding motif from multiple species for better detection of
+binding sites in all target genomes. The results are consistent with the
+original analysis that was performed using other available tools. Also, the CGB
+was used to characterize and perform comparative analysis on Verrucomicrobia
+LexA-binding motif. The analysis reported significant differences in the size
+and composition of the LexA regulatory network of the Verrucomicrobia.
+
+\section{Significance of the Research}
+
+The research described in this dissertation aims to accelerate the comparative
+genomics research on transcriptional regulation in Bacteria by implementing
+solutions to the problems identified in each major step of the pipeline. The
+efforts for collecting the experimental data and developing an automated
+framework would obviate the compilation of data and the development of custom
+scripts for the analysis, therefore, help the the researcher to focus on the
+most important step which is the interpretation of the results.
+
+\subsection{Development of a TFBS database}
+
+\begin{itemize}
+\item The collection of the experimental TFBS data in a central and transparent
+  repository and its customizable access ease the data collection step. Instead
+  of manually compiling data from publications or combining data from different
+  organism-specific databases, CollecTF proves to be useful as a comprehensive
+  resource  by serving the preprocessed binding site data and their
+  genomic context with export options.
+
+\item Using experimentally validated binding site data exclusively ensures that
+  models fit using the data are not biased. The mapping of used experimental
+  techniques to standard Evidence Ontology terms formalizes the experimental
+  procedure followed to detect each binding site.
+
+\item The integration with major sequence databases makes the data in CollecTF
+  widely accessible and safe in the long term. Also, its visibility
+  incentivizes the authors for direct submission of their data to CollecTF.
+\end{itemize}
+
+\subsection{Assessment of methods for motif and regulon transfer}
+
+\begin{itemize}
+\item The benchmark of existing methods for motif and regulon transfer is the
+  first ever large-scale effort to systematically measure their performances
+  under different phylogenetic proximities of reference and target species.
+
+\item The results showing that PR AUC is the best measure for transfer accuracy
+  challenges the common practice of using ROC AUC\@. This result suggesting the
+  use of PR over ROC in binding site classification problem is also supported
+  by other studies suggesting the same for other classification problems on
+  imbalanced datasets.
+
+\item The benchmark results showing better performance of motif-based methods
+  over network-based methods are instructive for designing transfer step of the
+  comparative genomics pipeline which can dramatically affect the final results.
+\end{itemize}
+
+\subsection{Development of a comparative genomics framework}
+
+\begin{itemize}
+
+\item The ability to analyze any sequenced genome makes possible the
+  characterization of transcriptional regulatory network of any strain, which
+  might be useful for research groups that work with particular strains of
+  interest.
+
+\item Combining evidence from multiple sources by taking the account the
+  phylogenetic relationship between species allows the comparative analysis of
+  phylogenetically distant species that might have different binding motifs.
+
+\item Determining a PSSM score threshold is a difficult task since it depends
+  on the shape of the motif and the genomic content. The Bayesian framework
+  addresses this issue by computing the posterior probability of regulation for
+  a given gene. Unlike PSSM scores, the posterior probability is a natural
+  concept with fixed range, providing easier interpretation of the likelihood
+  of the regulation. In addition, the Bayesian framework handles tandem TF
+  binding sites which might be weak to be detected individually by the PSSM
+  search but functional due to cooperative TF binding. Finally, the Bayesian
+  approach allows integrating a prior belief of TF binding with the likelihood
+  of observing putative sites in the promoter.
+
+\item CGB performs ancestral state reconstruction for each orthologous group of
+  a gene, inferring the probability of presence and TF-regulation of the gene
+  in shared ancestors of target species. Ancestral state reconstruction
+  provides a formal framework to perform evolutionary analysis of TF regulation
+  of the gene.
+
+\item The availability of CGB as a Python library and a stand-alone tool with
+  graphical interface ensures the replicability of an analysis performed using
+  it.
+\end{itemize}
+
+\section{Limitations and Recommendations for Future Research}
+
+\subsection{Development of a TFBS database}
+
+\begin{itemize}
+
+\item Although CollecTF is a hybrid effort of in-house and direct curations,
+  relying on in-house curations is unsustainable for the long-term continuity
+  of data submission. The promotion of database
+
+\item The strict curation procedure for data quality purposes makes the data
+  submission a lengthy procedure. In order to make the process easier for the
+  curator, the extraction of the data in publications can be automated through
+  text mining. Unlike early publications reporting TF binding site data, many
+  journals now make the data mining of their publications easy for text
+  mining. The structured data and the advanced natural language processing
+  techniques can be utilized to extract the relevant information (e.g.\ genome
+  and protein accession numbers, binding sites, experimental summary) which
+  would speed up the curation process. The curator would just have to verify
+  the extracted data, rather than manually copy it from the publications to
+  CollecTF data submission forms.
+
+\item An application programming interface (API) for CollecTF would make it
+  accessible programmatically for computational tools using TF binding site
+  data. It would allow the integration of CollecTF to CGB which would enable
+  direct access of CollecTF data from the comparative genomics tool, similar to
+  RegPredict-RegTransBase and Visual Footprint-PRODORIC integrations.
+\end{itemize}
+
+\subsection{Assessment of methods for motif and regulon transfer}
+
+\begin{itemize}
+
+\item Until the study described in this dissertation, the motif- and
+  regulon-transfer methods had never been systematically evaluated, partially
+  due to scarcity and distributed nature of the binding site data. CollecTF
+  partially addressed this issue and made possible the systematic assessment of
+  the methods. The available data from CollecTF and other databases, however,
+  was dominated by transcriptional regulators LexA and Fur. The evaluation
+  performed in the study can be repeated for other TFs as enough amount of
+  their binding site data becomes available.
+
+\item The standard model to approximate specific TF-DNA binding is PSSM, which
+  was shown to be a good approximation of the interaction and has been
+  preferred over more complex biophysical models and Hidden Markov models. As
+  the high-throughput data become increasingly available, complex models that
+  require more data can be investigated, and their performance on transferring
+  available information can be conducted in a reliable way.
+\end{itemize}
+
+\subsection{Development of a comparative genomics framework}
+
+\begin{itemize}
+\item The integration of CGB with CollecTF would allow using any combination of
+  binding motifs in CollecTF\@. Thanks to CollecTF's customizable search feature,
+  binding sites from multiple species that are verified with particular
+  experimental methods can be searched, aligned and extended if necessary, and
+  included in the analysis directly.
+
+\item The EggNOG identifiers can be automatically retrieved and directly
+  assigned to each orthologous group in order to enrich their functional
+  annotation. Each EggNOG group contains the functional description,
+  categories, associated GO annotations, and domain information that would be
+  useful to describe the elements of the regulatory network in a given species.
+
+\item In addition to EggNOG identifiers, the NCBI PubMed publication database
+  can be searched for publications of any relevance to a given gene. The
+  publications containing relevant information about a given gene could
+  potentially provide additional context on its regulation by the TF or its
+  lack thereof.
+
+\item In some cases, there is simply no experimental binding site data to build
+  a TF binding motif, therefore, no reference motif to start the transfer step
+  to detect putative sites in target genomes. In such cases, the only
+  alternative is the motif discovery on the promoters of genes that are known
+  to be co-regulated. Assuming that functionally important upstream regions
+  such as binding sites should be more conserved than other non-functional
+  regions, the overly represented pattern in upstream regions can be determined
+  as the binding motif which can be used in further steps of the
+  pipeline. Including a motif discovery to CGB would eliminate the dependency
+  to third-party motif discovery tools to identify the binding motif to start
+  the analysis.
+
+\end{itemize}
+
+
+
+\end{document}
