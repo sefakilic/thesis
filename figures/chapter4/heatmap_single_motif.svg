@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="-1333 -485 838 470" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://www.boxy-svg.com/bx">
+  <g transform="matrix(1, 0, 0, 1, -89.43412, -122.13253)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Courier; font-size: 10pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <text x="-460" y="7.531" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Courier; font-size: 13.3px; font-weight: 400; font-style: normal; word-spacing: 0px;">lexA</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 10.565881729126204, -102.13253021240223)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Courier; font-size: 10pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <text x="-560" y="7.531" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Courier; font-size: 13.3px; font-weight: 400; font-style: normal; word-spacing: 0px;">recA</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -115.43412, -126.63253)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -518.182 -1 L -450 -1 L -450 19 L -518.182 19 L -518.182 -1" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    <g transform="matrix(0, 0.76923, -0.583004, 0, -549.090027, -246.892212)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+      <g>
+        <g transform="matrix(0, 0.983812, -0.6337, 0, -100.356995, -115.759399)">
+          <path d="M 331.5 -137.852 L 764 -137.852 M 545 -137.852 C 545.828 -137.852 546.5 -136.792 546.5 -135.485 C 546.5 -134.178 545.828 -133.118 545 -133.118 C 544.171 -133.118 543.5 -134.178 543.5 -135.485 C 543.5 -136.792 544.171 -137.852 545 -137.852 M 181.5 -162.859 L 481.5 -162.859 M 331.5 -137.852 L 331.5 -158.125 M 331.5 -162.859 C 332.328 -162.859 333 -161.799 333 -160.492 C 333 -159.186 332.328 -158.125 331.5 -158.125 C 330.671 -158.125 330 -159.186 330 -160.492 C 330 -161.799 330.671 -162.859 331.5 -162.859 M 61.5 -186.498 L 301.5 -186.498 M 181.5 -162.859 L 181.5 -181.764 M 181.5 -186.498 C 182.328 -186.498 183 -185.439 183 -184.131 C 183 -182.825 182.328 -181.764 181.5 -181.764 C 180.671 -181.764 180 -182.825 180 -184.131 C 180 -185.439 180.671 -186.498 181.5 -186.498 M 1.5 -240.59 L 121.5 -240.59 M 61.5 -186.498 L 61.5 -235.856 M 61.5 -240.59 C 62.328 -240.59 63 -239.531 63 -238.223 C 63 -236.916 62.328 -235.856 61.5 -235.856 C 60.671 -235.856 60 -236.916 60 -238.223 C 60 -239.531 60.671 -240.59 61.5 -240.59 M 1.5 -240.59 L 1.5 -436.1 M 1.5 -440.835 C 2.328 -440.835 3 -439.774 3 -438.468 C 3 -437.161 2.328 -436.1 1.5 -436.1 C 0.671 -436.1 0 -437.161 0 -438.468 C 0 -439.774 0.671 -440.835 1.5 -440.835 M 121.5 -240.59 L 121.5 -415.204 M 121.5 -419.938 C 122.328 -419.938 123 -418.878 123 -417.571 C 123 -416.265 122.328 -415.204 121.5 -415.204 C 120.671 -415.204 120 -416.265 120 -417.571 C 120 -418.878 120.671 -419.938 121.5 -419.938 M 241.5 -215.002 L 361.5 -215.002 M 301.5 -186.498 L 301.5 -210.268 M 301.5 -215.002 C 302.328 -215.002 303 -213.943 303 -212.635 C 303 -211.329 302.328 -210.268 301.5 -210.268 C 300.671 -210.268 300 -211.329 300 -212.635 C 300 -213.943 300.671 -215.002 301.5 -215.002 M 241.5 -215.002 L 241.5 -335.895 M 241.5 -340.629 C 242.328 -340.629 243 -339.569 243 -338.262 C 243 -336.956 242.328 -335.895 241.5 -335.895 C 240.671 -335.895 240 -336.956 240 -338.262 C 240 -339.569 240.671 -340.629 241.5 -340.629 M 361.5 -215.002 L 361.5 -320.964 M 361.5 -325.698 C 362.328 -325.698 363 -324.638 363 -323.331 C 363 -322.024 362.328 -320.964 361.5 -320.964 C 360.671 -320.964 360 -322.024 360 -323.331 C 360 -324.638 360.671 -325.698 361.5 -325.698 M 481.5 -162.859 L 481.5 -374.54 M 481.5 -379.272 C 482.328 -379.272 483 -378.212 483 -376.905 C 483 -375.599 482.328 -374.538 481.5 -374.538 C 480.671 -374.538 480 -375.599 480 -376.905 C 480 -378.212 480.671 -379.272 481.5 -379.272 M 601.5 -151.269 L 946.499 -151.269 M 764 -137.852 L 764 -146.534 M 764 -151.269 C 764.828 -151.269 765.499 -150.208 765.499 -148.902 C 765.499 -147.593 764.828 -146.534 764 -146.534 C 763.171 -146.534 762.5 -147.593 762.5 -148.902 C 762.5 -150.208 763.171 -151.269 764 -151.269 M 781.5 -266.231 L 1111.5 -266.231 M 946.499 -151.269 L 946.499 -261.497 M 946.499 -266.231 C 947.328 -266.231 947.999 -265.171 947.999 -263.864 C 947.999 -262.558 947.328 -261.497 946.499 -261.497 C 945.671 -261.497 945 -262.558 945 -263.864 C 945 -265.171 945.671 -266.231 946.499 -266.231 M 721.5 -275.839 L 841.5 -275.839 M 781.5 -266.231 L 781.5 -271.104 M 781.5 -275.839 C 782.328 -275.839 783 -274.778 783 -273.471 C 783 -272.165 782.328 -271.104 781.5 -271.104 C 780.671 -271.104 780 -272.165 780 -273.471 C 780 -274.778 780.671 -275.839 781.5 -275.839 M 721.5 -275.839 L 721.5 -417.065 M 721.5 -421.799 C 722.328 -421.799 723 -420.738 723 -419.432 C 723 -418.125 722.328 -417.065 721.5 -417.065 C 720.671 -417.065 720 -418.125 720 -419.432 C 720 -420.738 720.671 -421.799 721.5 -421.799 M 841.5 -275.839 L 841.5 -436.091 M 841.5 -440.827 C 842.328 -440.827 843 -439.766 843 -438.46 C 843 -437.153 842.328 -436.093 841.5 -436.093 C 840.672 -436.093 840 -437.153 840 -438.46 C 840 -439.766 840.672 -440.827 841.5 -440.827 M 1021.5 -289.594 L 1201.5 -289.594 M 1111.5 -266.231 L 1111.5 -284.86 M 1111.5 -289.594 C 1112.328 -289.594 1113 -288.534 1113 -287.227 C 1113 -285.921 1112.328 -284.86 1111.5 -284.86 C 1110.671 -284.86 1110 -285.921 1110 -287.227 C 1110 -288.534 1110.671 -289.594 1111.5 -289.594 M 961.5 -314.713 L 1081.5 -314.713 M 1021.5 -289.594 L 1021.5 -309.979 M 1021.5 -314.713 C 1022.328 -314.713 1023 -313.653 1023 -312.346 C 1023 -311.04 1022.328 -309.979 1021.5 -309.979 C 1020.672 -309.979 1020 -311.04 1020 -312.346 C 1020 -313.653 1020.672 -314.713 1021.5 -314.713 M 961.5 -314.713 L 961.5 -401.622 M 961.5 -406.356 C 962.328 -406.356 963 -405.296 963 -403.989 C 963 -402.682 962.328 -401.622 961.5 -401.622 C 960.672 -401.622 960 -402.682 960 -403.989 C 960 -405.296 960.672 -406.356 961.5 -406.356 M 1081.5 -314.713 L 1081.5 -403.907 M 1081.5 -408.641 C 1082.328 -408.641 1083 -407.581 1083 -406.274 C 1083 -404.967 1082.328 -403.907 1081.5 -403.907 C 1080.672 -403.907 1080 -404.967 1080 -406.274 C 1080 -407.581 1080.672 -408.641 1081.5 -408.641 M 1201.5 -289.594 L 1201.5 -402.039 M 1201.5 -406.773 C 1202.328 -406.773 1203 -405.712 1203 -404.406 C 1203 -403.099 1202.328 -402.039 1201.5 -402.039 C 1200.672 -402.039 1200 -403.099 1200 -404.406 C 1200 -405.712 1200.672 -406.773 1201.5 -406.773 M 601.5 -151.269 L 601.5 -304.77 M 601.5 -309.504 C 602.328 -309.504 603 -308.444 603 -307.137 C 603 -305.831 602.328 -304.77 601.5 -304.77 C 600.671 -304.77 600 -305.831 600 -307.137 C 600 -308.444 600.671 -309.504 601.5 -309.504" style="fill: none; vector-effect: non-scaling-stroke;" bx:origin="0 1"/>
+        </g>
+      </g>
+    </g>
+    <g transform="matrix(0, 1, -1, 0, -477.101196, -329.19986)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, 124.898727, -326.19986)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, 124.898727, -326.19986)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -263.601288, -313.352844)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, 124.898727, -310.352844)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, 124.898727, -310.352844)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -113.601288, -298.37265)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, 124.898727, -295.37265)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, 124.898727, -295.37265)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, 6.398727, -264.094543)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, 124.898727, -261.094543)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, 66.398727, -137.199829)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -479.544189, -97.847351)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+      <text x="0" y="9.04688" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal;">A_cellulolyticus</text>
+    </g>
+    <g transform="matrix(0, 1, -1, 0, 4.898727, -261.094543)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -53.601273, -150.441833)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -547.726013, -66.003578)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+      <text x="0" y="9.04688" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal;">S_griseus</text>
+    </g>
+    <g transform="matrix(0, 1, -1, 0, -115.101288, -295.37265)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -115.101288, -295.37265)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -233.601288, -280.30954)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -115.101288, -277.30954)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -173.601288, -200.699829)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -615.946655, -96.362953)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+      <text x="0" y="9.04688" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal;">M_tuberculosis</text>
+    </g>
+    <g transform="matrix(0, 1, -1, 0, -235.101288, -277.30954)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -293.601288, -210.161835)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -684.128174, -73.394203)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+      <text x="0" y="9.04688" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal;">N_farcinica</text>
+    </g>
+    <g transform="matrix(0, 1, -1, 0, -355.101196, -310.352844)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -413.601196, -176.211823)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -752.271118, -91.909828)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+      <text x="0" y="9.04688" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal;">C_glutamicum</text>
+    </g>
+    <g style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;" transform="matrix(0, 1, -0.92, 0, -272.901215, -326.19986)"/>
+    <g transform="matrix(0, 1, -1, 0, -225.101288, -326.19986)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -696.101196, -320.697937)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -595.101196, -317.697937)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -595.101196, -317.697937)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -878.601196, -247.845825)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -595.101196, -244.845825)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -595.101196, -244.845825)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -713.601196, -241.757843)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -595.101196, -238.757843)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -653.601196, -149.262817)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -888.674194, -68.222351)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+      <text x="0" y="9.04688" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal;">E_faecalis</text>
+    </g>
+    <g transform="matrix(0, 1, -1, 0, -715.101196, -238.757843)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -773.601196, -137.204834)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -956.817139, -112.659851)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+      <text x="0" y="9.04688" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal;">C_acetobutylicum</text>
+    </g>
+    <g transform="matrix(0, 1, -1, 0, -835.101196, -244.845825)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -835.101196, -244.845825)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -1043.601196, -233.040833)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -835.101196, -230.040833)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -835.101196, -230.040833)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -953.601196, -217.122833)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -835.101196, -214.122833)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -893.601196, -159.048828)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -1025.037598, -63.76923)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+      <text x="0" y="9.04688" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal;">B_subtilis</text>
+    </g>
+    <g transform="matrix(0, 1, -1, 0, -955.101196, -214.122833)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -1013.601196, -157.60083)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -1093.180054, -115.644226)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+      <text x="0" y="9.04688" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal;">L_monocytogenes</text>
+    </g>
+    <g transform="matrix(0, 1, -1, 0, -1075.101196, -230.040833)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -1133.601196, -158.784851)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -1162.101196, -63.784821)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+      <text x="0" y="9.04688" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal;">S_aureus</text>
+    </g>
+    <g transform="matrix(0, 1, -1, 0, -475.101196, -317.697937)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -533.601196, -220.423828)" style="fill: rgb(0, 48, 193); fill-opacity: 1; stroke: rgb(0, 48, 193); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;"/>
+    <g transform="matrix(0, 1, -1, 0, -820.453125, -40.816101)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+      <text x="0" y="9.04688" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Arial; font-size: 10pt; font-weight: 400; font-style: normal;">L_xyli</text>
+    </g>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -115.43412, -107.63253)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -518.182 0 L -450 0 L -450 20 L -518.182 20 L -518.182 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -235.4341125488279, -127.63253021240223)" style="fill: rgb(22, 232, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -466.364 0 L -398.182 0 L -398.182 20 L -466.364 20 L -466.364 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -235.4341125488279, -107.63253021240234)" style="fill: rgb(94, 160, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -466.364 0 L -398.182 0 L -398.182 20 L -466.364 20 L -466.364 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -355.4341125488279, -127.63253021240223)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -414.545 0 L -346.364 0 L -346.364 20 L -414.545 20 L -414.545 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -355.4341125488279, -107.63253021240234)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -414.545 0 L -346.364 0 L -346.364 20 L -414.545 20 L -414.545 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -475.4341125488281, -127.63253021240223)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -362.727 0 L -294.545 0 L -294.545 20 L -362.727 20 L -362.727 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -475.4341125488281, -107.63253021240234)" style="fill: rgb(1, 253, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -362.727 0 L -294.545 0 L -294.545 20 L -362.727 20 L -362.727 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -595.434143066406, -127.63253021240223)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -310.909 0 L -242.727 0 L -242.727 20 L -310.909 20 L -310.909 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -595.434143066406, -107.63253021240234)" style="fill: rgb(3, 251, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -310.909 0 L -242.727 0 L -242.727 20 L -310.909 20 L -310.909 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -715.4341430664061, -127.63253021240223)" style="fill: rgb(171, 83, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -259.091 0 L -190.909 0 L -190.909 20 L -259.091 20 L -259.091 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -715.4341430664061, -107.63253021240234)" style="fill: rgb(153, 101, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -259.091 0 L -190.909 0 L -190.909 20 L -259.091 20 L -259.091 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -835.4341430664061, -127.63253021240223)" style="fill: rgb(240, 14, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -207.273 0 L -139.091 0 L -139.091 20 L -207.273 20 L -207.273 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -835.4341430664061, -107.63253021240234)" style="fill: rgb(6, 248, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -207.273 0 L -139.091 0 L -139.091 20 L -207.273 20 L -207.273 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -955.4341430664062, -127.63253021240223)" style="fill: rgb(70, 184, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -155.455 0 L -87.273 0 L -87.273 20 L -155.455 20 L -155.455 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -955.4341430664062, -107.63253021240234)" style="fill: rgb(201, 53, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -155.455 0 L -87.273 0 L -87.273 20 L -155.455 20 L -155.455 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -1075.43408203125, -127.63253021240223)" style="fill: rgb(87, 167, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -103.636 0 L -35.455 0 L -35.455 20 L -103.636 20 L -103.636 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -1075.43408203125, -107.63253021240234)" style="fill: rgb(134, 120, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -103.636 0 L -35.455 0 L -35.455 20 L -103.636 20 L -103.636 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -1195.43408203125, -127.63253021240223)" style="fill: rgb(4, 250, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -51.818 0 L 16.364 0 L 16.364 20 L -51.818 20 L -51.818 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -1195.43408203125, -107.63253021240234)" style="fill: rgb(30, 224, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M -51.818 0 L 16.364 0 L 16.364 20 L -51.818 20 L -51.818 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -1315.43408203125, -127.63253021240223)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M 0 0 L 68.182 0 L 68.182 20 L 0 20 L 0 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -1315.43408203125, -107.63253021240234)" style="fill: rgb(2, 252, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal; fill-rule: evenodd;">
+    <path d="M 0 0 L 68.182 0 L 68.182 20 L 0 20 L 0 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -8.298355, 0)">
+    <g transform="matrix(1, 0, 0, 1, -70.135742, -70.127953)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Courier; font-size: 10pt; font-weight: 400; font-style: normal;">
+      <text x="-470" y="7.531" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Courier; font-size: 13.3px; font-weight: 400; font-style: normal; word-spacing: 0px;">lexA</text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -70.135742, -50.127953)" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-family: Courier; font-size: 10pt; font-weight: 400; font-style: normal;">
+      <text x="-470" y="7.531" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; font-family: Courier; font-size: 13.3px; font-weight: 400; font-style: normal; word-spacing: 0px;">recA</text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -187.135742, -75.627953)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -438.182 0 L -370 0 L -370 20 L -438.182 20 L -438.182 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -187.135742, -55.627953)" style="fill: rgb(1, 253, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -438.182 0 L -370 0 L -370 20 L -438.182 20 L -438.182 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -299.135742, -75.627953)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -394.364 0 L -326.182 0 L -326.182 20 L -394.364 20 L -394.364 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -299.135742, -55.627953)" style="fill: rgb(232, 22, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -394.364 0 L -326.182 0 L -326.182 20 L -394.364 20 L -394.364 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -411.135742, -75.627953)" style="fill: rgb(13, 241, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -350.545 0 L -282.364 0 L -282.364 20 L -350.545 20 L -350.545 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -411.135742, -55.627953)" style="fill: rgb(1, 253, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -350.545 0 L -282.364 0 L -282.364 20 L -350.545 20 L -350.545 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -523.135742, -75.627953)" style="fill: rgb(32, 222, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -306.727 0 L -238.545 0 L -238.545 20 L -306.727 20 L -306.727 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -523.135742, -55.627953)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -306.727 0 L -238.545 0 L -238.545 20 L -306.727 20 L -306.727 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -635.135742, -75.627953)" style="fill: rgb(148, 106, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -262.909 0 L -194.727 0 L -194.727 20 L -262.909 20 L -262.909 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -635.135742, -55.627953)" style="fill: rgb(234, 20, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -262.909 0 L -194.727 0 L -194.727 20 L -262.909 20 L -262.909 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -747.135742, -75.627953)" style="fill: rgb(18, 236, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -219.091 0 L -150.909 0 L -150.909 20 L -219.091 20 L -219.091 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -747.135742, -55.627953)" style="fill: rgb(85, 169, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -219.091 0 L -150.909 0 L -150.909 20 L -219.091 20 L -219.091 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -859.135742, -75.627953)" style="fill: rgb(222, 32, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -175.273 0 L -107.091 0 L -107.091 20 L -175.273 20 L -175.273 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -859.135742, -55.627953)" style="fill: rgb(45, 209, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -175.273 0 L -107.091 0 L -107.091 20 L -175.273 20 L -175.273 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -971.135742, -75.627953)" style="fill: rgb(32, 222, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -131.455 0 L -63.273 0 L -63.273 20 L -131.455 20 L -131.455 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -971.135742, -55.627953)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -131.455 0 L -63.273 0 L -63.273 20 L -131.455 20 L -131.455 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -1083.135742, -75.627953)" style="fill: rgb(29, 225, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -87.636 0 L -19.455 0 L -19.455 20 L -87.636 20 L -87.636 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -1083.135742, -55.627953)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -87.636 0 L -19.455 0 L -19.455 20 L -87.636 20 L -87.636 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -1195.135742, -75.627953)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -43.818 0 L 24.364 0 L 24.364 20 L -43.818 20 L -43.818 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -1195.135742, -55.627953)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M -43.818 0 L 24.364 0 L 24.364 20 L -43.818 20 L -43.818 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -1307.135742, -75.627953)" style="fill: rgb(24, 230, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M 0 0 L 68.182 0 L 68.182 20 L 0 20 L 0 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -1307.135742, -55.627953)" style="fill: rgb(0, 254, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 1; stroke-linecap: square; stroke-linejoin: bevel; font-size: 13pt; font-weight: 400; font-style: normal;">
+      <path d="M 0 0 L 68.182 0 L 68.182 20 L 0 20 L 0 0" style="vector-effect: non-scaling-stroke; fill-rule: evenodd;" bx:origin="0.5 0.5"/>
+    </g>
+  </g>
+</svg>
