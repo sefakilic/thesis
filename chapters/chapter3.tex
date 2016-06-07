@@ -39,12 +39,13 @@ species. The simplest approach, here called “direct transfer”, is to use the
 reference TF-binding motif to search for sites in the target genome. The target
 motif is hence implicitly defined as a subset of the highest scoring sites in
 that genome~\cite{tan2001comparative, makarova2001conservation,
-  erill2004differences, rodionov2013transcriptional}. In “direct discovery”,
-the direct transfer scheme is further elaborated by applying a motif discovery
-or optimization algorithm on a set of high-scoring sites from the target genome
+  erill2004differences, rodionov2013transcriptional}.
+The direct transfer scheme can be further elaborated by applying a motif discovery
+or optimization algorithm (``direct discovery'')
+on a set of high-scoring sites from the target genome
 \cite{baumbach2009reliable, habib2012functional}. The alternative to TF-binding
 motif-based transfer is to assume conservation of gene content in the
-TRN\@. Regulon or “network transfer” is typically implemented through the
+TRN\@. Such regulon or “network transfer” is typically implemented through the
 detection of orthologs for genes in known regulated operons. The promoter
 regions of the corresponding operons in target genomes are then analyzed with a
 motif discovery tool to elicit the TF-binding motif
@@ -189,7 +190,7 @@ As it can be seen in Figure~\ref{fig:transfer-evaluation-comparison}, both the
 Euclidean distance and KL-divergence perform only moderately well at
 discriminating the results of simulated noisy transfers (containing 50\% and
 75\% random sites) from completely random or permuted motifs. This result is
-partly because the expectation for random motifs is not to yield maximum
+partly due to the fact that the expectation for random motifs is not to yield maximum
 distance, narrowing the useful range of motif comparison metrics. The two other
 contributing factors are the high-dimensionality of TF-binding motifs, which is
 known to decrease the relative contrast of
@@ -369,20 +370,20 @@ modes (Figure~\ref{fig:network-transfer-auc}).
 In contrast with network-based transfer methods, the different implementations
 of motif-based transfer yield very similar results
 (Figure~\ref{fig:comparison-transfer-methods}). Using the reference motif to
-search promoter regions and define the putative target motif (direct transfer)
+search promoter regions and define the putative target motif (\textit{direct transfer})
 provides results comparable to those obtained with other motif-based transfer
 methods and robust with respect to the specific threshold used to define the
-motif (Figure~\ref{fig:direct-transfer-alpha}). The use of MEME in direct
-discovery transfers to rediscover the TF-binding motif, which has been
+motif (Figure~\ref{fig:direct-transfer-alpha}). The use of MEME in \textit{direct
+discovery} transfers to rediscover the TF-binding motif, which has been
 postulated to refine and better adapt the inferred motif to the target
 genome~\cite{habib2012functional}, does not provide significant improvements
-over the direct transfer. In fact, when performing motif discovery in the
+over \textit{direct transfer}. In fact, when performing motif discovery in the
 promoter region surrounding the identified sites, MEME may identify other
 genomic elements (e.g. Pribnow boxes) as the best motifs, decreasing the
 accuracy of the method. Performing motif inference on the identified sites
 surrounded by random promoter regions prevents this effect but does not yield a
 systematic improvement in PR-AUC values over the direct transfer. Finally, the
-mixed mode approach, which has been associated with enhanced
+\textit{mixed mode} approach, which has been associated with enhanced
 specificity~\cite{baumbach2010power, baumbach2009reliable}, did not yield a
 systematic improvement over direct transfer either.
 
@@ -409,7 +410,7 @@ Our comparative analysis of transfer methods
 (Figure~\ref{fig:comparison-transfer-methods}) indicates that even at
 relatively close phylogenetic distances, both motif- and network-based transfer
 methods may provide inaccurate results. Hence, manual curation of transfer
-results, which has been the de facto standard for comparative genomics of TRN
+results, which has been the \textit{de facto} standard for comparative genomics of TRN
 in Bacteria~\cite{tan2001comparative, erill2004differences,
   gelfand2000comparative, novichkov2010regpredict}, appears to be a necessary
 requisite to ensure the reliability of any subsequent comparative genomics
