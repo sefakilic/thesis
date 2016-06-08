@@ -13,10 +13,14 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{wasysym}
 \usepackage{mathptmx}  % Times New Roman font
+\usepackage{microtype} % improve line breaks
+\usepackage{textcomp} % degree symbol
 
 \newcommand*\rot{\rotatebox{90}}
 \newcommand*\x{\newmoon}
 \newcolumntype{C}{>{\centering\arraybackslash}p{1.5em}}
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n} % Reset mathcal font to default
+\def\labelitemi{--}
 
 \title{Comparative Genomics of Transcriptional Regulatory Networks in Bacteria}
 \author{Sefa Kılıç}
@@ -37,13 +41,15 @@
 
 \include{chapters/chapter3}
 
-%\include{chapters/chapter4}
+\include{chapters/chapter4}
 
-%\include{chapters/chapter5}
+\include{chapters/chapter5}
+
+\include{chapters/chapter6}
 
 \singlespacing
 \bibliographystyle{unsrt}
 % github.com/sefakilic/bib
-\bibliography{/home/sefa/Dropbox/bib/bibliography}
+\bibliography{/Users/sefa/Dropbox/bib/bibliography}
 
 \end{document}
