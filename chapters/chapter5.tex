@@ -13,17 +13,17 @@ arrest~\cite{au2005genetic, fernandez2000identification, walker2000sos}. The
 SOS response is controlled by the transcriptional regulator
 LexA~\cite{michel2005after}. Under normal conditions, the LexA binds as a
 homodimer to sites upstream of regulated operons, blocking the initiation of
-their transcription. When the DNA damage occurs, RecA, the other main protein
+their transcription. When DNA damage occurs, RecA, the other main protein
 involved in the SOS response, binds to single-stranded DNA and promotes the
-autoproteolysis of the LexA. The self-cleavage of the LexA repressor leads to
+autoproteolysis of the LexA. Self-cleavage of the LexA repressor leads to
 de-repression of the SOS response genes, including \textit{lexA} and
-\textit{recA}~\cite{little1991mechanism}. In recent years, there has been a
-growing research in the SOS response due to its induction by antibiotic stress
+\textit{recA}~\cite{little1991mechanism}. In recent years, there has been
+growing research interest in the SOS response due to its induction by antibiotic stress
 and its involvement in the regulation of mobile genetic elements, such as
 integrative-conjugative elements and integron integrase genes~\cite{beaber2004sos,
   guerin2009sos}.
 
-Unlike many transcriptional regulators, the LexA binding motif display
+Unlike many transcriptional regulators, the LexA binding motif displays remarkable
 divergence across different phyla. LexA has been reported to bind short
 inverted repeats (GAAC-N4-GTTC) in the Firmicutes and
 Actinobacteria~\cite{au2005genetic, davis2002definition}, large palindromic
@@ -32,21 +32,21 @@ motifs (CTGT-N8-ACAG) in the Gammaproteobacteria~\cite{erill2003silico,
 Alphaproteobacteria~\cite{erill2004differences,
   fernandez1998identification}. The LexA regulon size and composition also vary
 significantly across species. LexA has been reported to regulate from 3 to 40
-genes where the core SOS regulon comprises \textit{lexA}, \textit{recA} and the
-mutagenesis gene cassette \textit{imuA-imuB-dnaE2}
-operon~\cite{erill2006dispersal}. This variation in its binding motif and
+genes, with a core SOS regulon comprising \textit{lexA}, \textit{recA} and the
+mutagenesis operon \textit{imuA-imuB-dnaE2}~\cite{erill2006dispersal}. This
+variation in its binding motif and
 regulon makes LexA a unique model to study the evolution of transcriptional
 regulatory elements.
 
 Verrucomicrobia are a recently established Gram-negative phylum with unusual
-wart-like protrusions and eukaryotic-like tubulin~\cite{garrity2001road,
+wart-like protrusions and eukaryotic-like tubulins~\cite{garrity2001road,
   schlesner2006phylum}. Named after \textit{Verrucomicrobium spinosum}, little
 is known about this group of Bacteria. They have recently gained attention due
 to their association with eukaryotic hosts, their under-recognized dominance in
 soil communities and their significant role in the colonization of the human
 gut~\cite{sait2011genomic, bergmann2011under, dubourg2013high}. The
 Verrucomicrobia are grouped with the Planctomycetes and the Chlamydiae in the
-PVC superphylum which is comprised of species that are of clinical and
+PVC superphylum which comprises species that are of clinical and
 biotechnological interest~\cite{gupta2012molecular}.
 
 
@@ -55,10 +55,10 @@ representative Verrucomicrobia species, \textit{V. spinosum}, has orthologs for
 the three core SOS response genes (\textit{lexA}, \textit{recA} and
 \textit{imuA}-\textit{imuB}-\textit{dnaE2} operon), the presence of which
 suggests that the Verrucomicrobia have a functional SOS response. This study
-documents \textit{in silico} and \textit{in vitro} characterization of the LexA
+documents the \textit{in silico} and \textit{in vitro} characterization of the LexA
 binding motif in the Verrucomicrobia and the analysis of the SOS regulatory
-network which is shown to display extreme plasticity in terms of size and
-composition of the regulon.
+network in this phlyum, which is shown to display extreme plasticity in terms of
+the size and composition of the regulon.
 
 \section{Results}
 
@@ -68,14 +68,15 @@ The representative Verrucomicrobia species, \textit{V. spinosum} DSM 4136,
 possesses the core members of the SOS response, \textit{lexA} (VSP\_RS04780),
 \textit{recA} (VSP\_RS32310) and \textit{imuA}-\textit{imuB}-\textit{dnaE2}
 (VSP\_RS05590, VSP\_RS05595, VSP\_RS05600), which suggests that the
-Verrucomicrobia have a functional LexA regulatory network. The computational
-search with the known LexA binding motifs did not detect any putative binding
+Verrucomicrobia have a functional LexA regulatory network. A computational
+search with known LexA-binding motifs did not detect any putative binding
 sites upstream of SOS response related genes in \textit{V. spinosum} which
-suggests that \textit{V. spinosum}. A presence of a novel LexA binding motif in
-the Verrucomicrobia is tested by searching for an overrepresented pattern in
+suggests that \textit{V. spinosum} LexA targets a different motif. The presence
+of a novel LexA binding motif in
+the Verrucomicrobia was tested by searching for overrepresented patterns in
 116 promoter sequences of \textit{V. spinosum} \textit{lexA}, \textit{recA} and
 \textit{imuA} orthologs from 59 different assemblies for the Verrucomicrobia
-phylum. The most significant motif identified by MEME is a 14 bp palindromic
+phylum. The most significant motif identified by MEME was a 14 bp palindromic
 motif (TGTTC-N4-GAACA), identified in the promoter of 27 \textit{lexA}, 25
 \textit{recA} and 3 \textit{imuA} genes of 36 different genome and metagenome
 assemblies (Figure~\ref{fig:verruco-lexa}A). A computational search using the
@@ -100,8 +101,9 @@ operons (Figure~\ref{fig:verruco-lexa}B).
   \label{fig:verruco-lexa}
 \end{figure}
 
-Computationally identified LexA binding motif was experimenally validated
-through electro-mobility shift assays (EMSA). The \textit{V. spinosum} DSM 4136
+The computationally identified LexA binding motif was experimenally validated
+through electro-mobility shift assays (EMSA) and site-directed mutagenesis.
+The \textit{V. spinosum} DSM 4136
 LexA protein (WP\_009959117) was purified and EMSA was performed with wild-type
 and mutants with single nucleotide substitutions at each position of the
 predicted binding motif. The results of the site-directed mutagenesis confirm
@@ -166,9 +168,11 @@ only the first TGTTC is conserved. (Figure~\ref{fig:lexa-tandem}).
 In addition, a member of the Verrucomicrobia phylum, \textit{Opitutus terrae}
 PB90-1, has two fully conserved LexA binding motifs in the promoter region of
 the putative \textit{lexA-imuA-imuB-dnaE2} operon (OTER\_RS20480,
-OTER\_RS20475, OTER\_RS20470, OTER\_RS20465) separated by 2 bp. Tandem
-arrangement of two LexA binding sites generates a GAAC-N4-GTTC sequence,
-the LexA binding motif of Firmicutes and Actinobacteria. To validate the
+OTER\_RS20475, OTER\_RS20470, OTER\_RS20465) separated by 2 bp. In this
+species, the tandem
+arrangement of two LexA-binding sites generates a GAAC-N4-GTTC sequence,
+concordant with the LexA binding motif of Firmicutes and Actinobacteria. To
+validate the
 functionality of this configuration, EMSA with \textit{O. terrae} LexA
 (WP\_012376858) was performed revealing two retardation bands at low LexA
 protein concentration and confirming that both LexA sites in the
@@ -176,14 +180,12 @@ protein concentration and confirming that both LexA sites in the
 (Figure~\ref{fig:emsa1}B). EMSA with increasing concentrations of
 \textit{B. subtilis} LexA (WP\_0032382009) shows that \textit{B. subtilis} LexA
 binds to the motif instance generated by the tandem arrangement in the
-\textit{O. terrae} \textit{lexA-imuA-imuB-dnaE2} promoter, similar to the one
-observed in the \textit{B. subtilis} \textit{recA} promoter
-(Figure~\ref{fig:emsa1}C).
+\textit{O. terrae} \textit{lexA-imuA-imuB-dnaE2} promoter (Figure~\ref{fig:emsa1}C).
 
 \subsection{The core Verrucomicrobia LexA regulon is composed of three operons
   involved in DNA repair and mutagenesis}
 
-Once the LexA binding motif of the Verrucomicrobia is identified, a comparative
+Once the LexA binding motif of the Verrucomicrobia had been identified, a comparative
 genomics analysis was performed for the LexA regulon in this phylum. 15
 whole-genome shotgun assemblies were compiled for species with a
 \textit{V. spinosum} LexA homolog from all three major classes of
@@ -194,7 +196,7 @@ that comprises three operons: \textit{lexA}, \textit{recA} and
 \textit{lexA} promoter of all species except \textit{Verrucomicrobium} sp. 3C,
 \textit{Verrucomicrobia bacterium} LP2A and \textit{Pedosphaera parvula}
 Ellin514, suggesting that they have a different LexA binding motif. The
-\textit{splB} appears to be LexA regulated in many \textit{Verrucomicrobiae},
+\textit{splB} gene appears to be LexA regulated in many \textit{Verrucomicrobiae},
 one \textit{Opitutaceae} (\textit{O. terrae}) and \textit{Chthoniobacter
   flavus} Ellin428, the only available assembly of a Spartobacteria. The
 \textit{splB} product contains a radical SAM domain (PFAM04055) and homologous
@@ -229,11 +231,12 @@ The comparative genomics analysis shows plasticity of the LexA regulon across
 the Verrucomicrobia. The predicted regulons range from one operon in
 \textit{Verrucomicrobia bacterium} IMCC26134 to 14 operons in
 \textit{V. spinosum}. LexA appears to regulate at most two operons in
-\textit{Opitutaceae}. \textit{O. terrae} and \textit{Opitutaceae bacterium}
+the \textit{Opitutaceae}. \textit{O. terrae} and \textit{Opitutaceae bacterium}
 TAV5 in this family have a duplication of \textit{lexA} gene. The \textit{lexA}
 genes in \textit{O. terrae} (OTER\_RS20480) and (OTER\_RS11645) are
 significantly diverged (42\% protein sequence identity) and only the promoter
-of the \textit{lexA1} gene (OTER\_RS20480) appears to have a LexA binding
+of the \textit{lexA1} gene (OTER\_RS20480) appears to have a functional
+Verrucomicrobia LexA-binding
 site. In contrast, the \textit{O. bacterium} TAV5 \textit{lexA} genes are 91\%
 identical and their promoters contain almost identical LexA binding sites. The
 only available Spartobacteria species (\textit{C. flavus}) has a LexA regulon
@@ -282,9 +285,9 @@ motif in all three major classes, Opitutae, Spartobacteria and Verrucomicrobiae
 all three classes suggests that a LexA regulatory network was present in the
 ancestor of the Verrucomicrobia. In contrast, the size and composition of the
 regulon is highly variable (Figure~\ref{fig:cgb}). Some families such as
-\textit{Methylacidiphilaceae} do not have a LexA homolog, and several species
+the \textit{Methylacidiphilaceae} do not have a LexA homolog, and several species
 in the Verrucomicrobiales and Opitutales appear to have a small SOS regulatory
-network (1--3 operons). The translesion synthesis polymerases have been
+network (1--3 operons). Translesion synthesis polymerases have been
 documented to be present as a member of SOS regulatory networks of varying
 sizes in many clades~\cite{erill2007aeons, davis2002definition,
   fernandez2000identification, sanchez2015sos, ulrich2013characterization,
@@ -293,7 +296,8 @@ sizes in many clades~\cite{erill2007aeons, davis2002definition,
 hypothesis that it was a part of the ancestral SOS response. In addition, the
 presence of a photolyase (\textit{splB}) documented in several
 clades~\cite{davis2002definition, cirz2006defining, sanchez2012analysis,
-  ulrich2013characterization, sanchez2015sos} and its identification in the
+  ulrich2013characterization, sanchez2015sos} and its identification as a core
+element of the SOS response in the
 Verrucomicrobia suggest that photoreactivation might be an essential part of
 the primordial SOS response.
 
@@ -305,7 +309,7 @@ and ENOG410QKP1) (Figure~\ref{fig:cgb}) which is involved in the initiation and
 the reversal of recombination and reported to cooperate with the SOS genes
 \textit{recA} and \textit{ssb}~\cite{heyer2004damage,
   nakayama2005escherichia}. The LexA regulation of RecQ but not other DNA
-helicases (uvrD, PcrA, DinG) postulates that RecQ might have a complementary
+helicases (uvrD, PcrA, DinG) suggests that RecQ might have a complementary
 role in this phylum.
 
 \subsection{A tandem model for the evolution of the LexA binding motif}
