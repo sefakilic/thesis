@@ -5,13 +5,13 @@
 The growing number of completely sequenced genomes and increasingly available
 experimentally validated transcription factor binding site (TFBS) data from
 closely related species have made possible the comparative genomics analysis of
-transcriptional regulatory networks in Bacteria~\cite{makarova2001conservation,
+transcriptional regulatory networks in Bacteria~\citep{makarova2001conservation,
   rodionov2007comparative, babu2004structure}. In most comparative genomics
 studies, however, the datasets of binding evidence and the methods used for
 analysis are adopted in an ad hoc manner. The experimentally verified binding
 site data usually come from a single species, or the inferred binding motifs
 from multiple species are directly combined without taking into account their
-phylogenetic relationship to the target genome~\cite{erill2004differences,
+phylogenetic relationship to the target genome~\citep{erill2004differences,
   novichkov2010regpredict, ravcheev2013genomic, leyn2014comparative,
   kazakov2009comparative, rodionov2008transcriptional}. Collected data is used
 to transfer information from reference species to target ones using \textit{de
@@ -24,20 +24,20 @@ comparative genomics analyses include collecting binding site data for all
 bacterial species in central repositories and systematic assessment of methods
 for TF binding evidence transfer. One such effort for the data collection is
 CollecTF, a database of experimentally validated transcription factor binding
-sites in the Bacteria domain~\cite{kilic2013collectf}. Having binding site
+sites in the Bacteria domain~\citep{kilic2013collectf}. Having binding site
 evidence from an extensive collection of bacterial species, CollecTF allows
 integration of TF binding evidence from a group of selected species by
 dynamically aligning binding sites of possibly different lengths using
-LASAGNA~\cite{lee2013lasagna}.
+LASAGNA~\citep{lee2013lasagna}.
 
 Although the available TF binding and regulation evidence is usually
 transferred using the reference TF binding motif, there has been successful
 applications of transferring transcriptional regulatory networks (TRN), rather
 than the binding motif, to infer the binding motif and regulatory network in
-target species~\cite{babu2008computational, novichkov2010regpredict}. We
+target species~\citep{babu2008computational, novichkov2010regpredict}. We
 recently evaluated transfer methods that assume conservation of the TF binding
 motif (motif-based) and the methods assuming conservation of regulon
-composition (network-based)~\cite{kilic2015assessment}. Our systematic
+composition (network-based)~\citep{kilic2015assessment}. Our systematic
 assessment showed that motif-based methods substantially outperform
 network-based ones. We also found that the efficiency of motif-based transfer
 methods decreases sharply with the increasing phylogenetic distance between
@@ -49,25 +49,25 @@ motifs and regulons in a group of target species. Most studies use custom
 implementations of computational methods to scan genomes for putative binding
 sites, adopting some scoring scheme such as Position Specific Scoring Matrices
 (PSSM), the Berg and von Hippel index or their
-variations~\cite{schneider1986information, berg1988selection,
+variations~\citep{schneider1986information, berg1988selection,
   osada2004comparative, beckstette2006fast}. There are also some
 general-purpose platforms to analyze bacterial TF binding and regulation. One
 such platform is Visual Footprint, an online framework for prediction of TF
 binding sites using PRODORIC database as the data source, and for the
 visualization of search results in their genomic
-context~\cite{munch2005virtual, munch2003prodoric}. Visual Footprint allows the
+context~\citep{munch2005virtual, munch2003prodoric}. Visual Footprint allows the
 user to search a given PSSM in the promoter regions of a selected genome, but
 does not provide comparative genomics capabilities.
 
 One platform that allows comparative analysis of multiple genomes is
 RegPredict, a system for regulon inference and comparative genomics in Bacteria
 domain, integrated with the literature-based TF binding site database
-RegTransBase~\cite{novichkov2010regpredict,
+RegTransBase~\citep{novichkov2010regpredict,
   kazakov2007regtransbase}. Successfully used in many comparative genomics
-analysis~\cite{ravcheev2012transcriptional, antunes2012global,
+analysis~\citep{ravcheev2012transcriptional, antunes2012global,
   novichkov2013regprecise, galperin2014comparative}, RegPredict uses the
 motif-based transfer to identify
-functional sites in a group of species~\cite{kilic2015assessment}. It clusters
+functional sites in a group of species~\citep{kilic2015assessment}. It clusters
 co-regulated orthologous operons and produces a graphical output for each
 orthologous group, showing the genomic context and gene function summary
 information.
@@ -107,13 +107,13 @@ evaluation of transfer methods, we have developed CGB, a comparative genomics
 platform to analyze the transcriptional regulation in bacterial clades, using
 the TF-binding evidence from one or more reference species. CGB allows the
 analysis of any target genome in the NCBI RefSeq
-database~\cite{o2015reference}, available as a complete genome or a set of
+database~\citep{o2015reference}, available as a complete genome or a set of
 contigs. It incorporates the binding evidence from each reference species using
 a weighted approach taking into account the phylogenetic distances and the size
 of each binding site collection. Another significant contribution is the
 adoption of a Bayesian framework, originally introduced for the analysis of
 transcriptional regulatory networks in metagenomic
-data~\cite{hobbs2016bayesian}. The use of a Bayesian framework allows
+data~\citep{hobbs2016bayesian}. The use of a Bayesian framework allows
 calculation of posterior probability of regulation for each operon, rather than
 just reporting PSSM scores higher than a predefined threshold. The Bayesian
 framework also allows incorporating prior belief on the TF-regulation of any
@@ -124,7 +124,7 @@ ancestral state
 reconstruction for each orthologous groups of genes, enabling reliable testing
 of hypotheses on the evolution of transcription factors, their binding motifs
 and regulatory networks across different
-organisms~\cite{pagel1999inferring}. CGB is available under a GPL license
+organisms~\citep{pagel1999inferring}. CGB is available under a GPL license
 on GitHub (\url{http://www.github.com/erilllab/cgb}).
 
 \section{Regulation Inference and Comparative Analysis Pipeline}
@@ -172,14 +172,14 @@ performed to infer the state of TF regulation in ancestral clades.
 As output, the putative binding sites in promoter regions of all target genomes
 are reported in Comma-Separated Value (CSV) format. Also, the phylogenetic tree
 that is built with TF-instances from reference and target species is produced
-in Newick and Nexus formats~\cite{maddison1997nexus,
+in Newick and Nexus formats~\citep{maddison1997nexus,
   felsenstein2004inferring}. In addition to genome-specific reporting of all
 operons and their posterior probabilities of regulation, the orthologous groups
 of genes and their regulation probabilities are reported together to compare
 the TF-regulation of the same gene in different organisms. These results are
 visualized as a heatmap (Figure~\ref{fig:heatmap_2}), presented with the
 phylogenetic tree, where each row corresponds to an orthologous group, and each
-column denotes the genes of a single genome~\cite{huerta2016ete}. Each gene is
+column denotes the genes of a single genome~\citep{huerta2016ete}. Each gene is
 represented as a square in the heatmap and its color is based on the posterior
 probability of its regulation, ranging from green (probability of one) to red
 (probability of zero). The absence of an ortholog in a species for a particular
@@ -196,10 +196,10 @@ binding sites and the NCBI protein accession numbers of the TF-instance. The
 target genomes are defined as the pair of user-defined strain names and NCBI
 RefSeq accession numbers of each chromosome, plasmid or contig of the
 species. The protein and genome records are downloaded via Entrez queries, and
-the genome annotations are parsed using Biopython~\cite{wheeler2007database,
+the genome annotations are parsed using Biopython~\citep{wheeler2007database,
   cock2009biopython}. The TF-instances on target genomes are identified via
 BLAST (tblastn) using reference TF-instances as query
-sequences~\cite{altschul1990basic}. If there are multiple reference
+sequences~\citep{altschul1990basic}. If there are multiple reference
 TF-instances and they have best BLAST hits to different genes of a target
 genome, the BLAST hit with the smallest e-value is selected. The target genomes
 with no identified TF-instance are discarded from the analysis.
@@ -207,29 +207,29 @@ with no identified TF-instance are discarded from the analysis.
 \subsection{Operon prediction}
 
 The distance between two adjacent genes is a powerful indicator whether genes
-are in the same operon~\cite{westover2005operon}. Genes that are in the same
+are in the same operon~\citep{westover2005operon}. Genes that are in the same
 operon tend to be closer to each other than adjacent genes in different
 operons. CGB predicts operons of a given genome using a distance threshold,
 such that all directon gene pairs (adjacent genes on the same DNA strand with
 no intervening gene on the other strand) with intergenic distance less than the
-threshold are considered to belong to the same operon~\cite{salgado2000operons,
+threshold are considered to belong to the same operon~\citep{salgado2000operons,
   moreno2002powerful, price2005novel}. Since CGB does not restrict the target
 genomes to a limited set, it is not feasible to rely on existing operon
 databases which contain operon predictions for a fixed set of
-genomes~\cite{mao2009door, taboada2012proopdb, pertea2009operondb}. Other
+genomes~\citep{mao2009door, taboada2012proopdb, pertea2009operondb}. Other
 operon prediction methods based on conserved features, functional similarity
 and codon usage are not suitable either, since using them would require having
 many closely related genomes to calculate comparative features for any target
-genome, dramatically increasing runtime~\cite{chuang2012features}. There exist
+genome, dramatically increasing runtime~\citep{chuang2012features}. There exist
 operon prediction methods that rely on the identification of sequence motifs
 pertaining to promoter and terminator sites, but these methods are known to be
 of limited applicability, since these sequence elements are not well conserved
-across bacterial species~\cite{salgado2000operons, itoh1999evolutionary}. To
+across bacterial species~\citep{salgado2000operons, itoh1999evolutionary}. To
 address these limitations, CGB relies on the use of an intergenic distance
 threshold to predict operons. Although known to overestimate the number of
 operons (by splitting real operons), this method is known to have relatively
 high accuracy as operon predictor and has been widely
-used in the literature~\cite{chuang2012features, westover2005operon}. A main
+used in the literature~\citep{chuang2012features, westover2005operon}. A main
 limitation of intergenic distance-based methods stems from the fact that
 different genomes may display lower or higher compaction in their intergenic
 regions. Rather than using a single
@@ -240,9 +240,9 @@ In order to determine the optimal method to automatically define an intergenic
 distance threshold on each target species, we performed a benchmark of several
 alternative methods using available data on operon organization across the
 Bacteria domain. Pperons of species with more than 500 known operons were
-retrieved from ODB operon database~\cite{okuda2006odb}. Each adjacent gene pair
+retrieved from ODB operon database~\citep{okuda2006odb}. Each adjacent gene pair
 was labeled as a WO (within-operon) pair or a TUB (transcription unit boundary)
-pair~\cite{chen2004computational}. Species with known operons available in ODB
+pair~\citep{chen2004computational}. Species with known operons available in ODB
 are \textit{Bacillus subtilis} subsp. subtilis 168 (bsu), \textit{Escherichia
   coli} K-12 MG1655 (eco), \textit{Helicobacter pylori} 26695 (hpy),
 \textit{Listeria monocytogenes} EGD-e (lmo), \textit{Corynebacterium
@@ -251,7 +251,7 @@ are \textit{Bacillus subtilis} subsp. subtilis 168 (bsu), \textit{Escherichia
 Figure~\ref{fig:operon-prediction-a} shows that using a single intergenic
 distance threshold for all species would not perform well since intergenic
 distances within operons vary across
-species~\cite{rogozin2002congruent}. Therefore, for a given genome, the
+species~\citep{rogozin2002congruent}. Therefore, for a given genome, the
 distance threshold can be calculated using the intergenic distance distribution
 of adjacent genes on the same strand. Figure~\ref{fig:operon-prediction-b}
 demonstrates that mean intergenic distance of adjacent genes on the same strand
@@ -298,7 +298,7 @@ that the PSSM score threshold that determines what is considered a high-scoring
 TF-binding site is used only to improve operon prediction, not to identify
 binding sites to infer regulation. The selected PSSM score threshold satisfies
 the equality between the negative logarithm of the false positive rate (FPR)
-and the information content (IC) of the motif~\cite{hertz1999identifying}.
+and the information content (IC) of the motif~\citep{hertz1999identifying}.
 
 \subsection{Phylogenetic weighting of binding evidence}
 
@@ -307,7 +307,7 @@ and to perform ancestral state reconstruction, is reconstructed using the
 pairwise protein sequence alignments of TF-instances of the reference and target
 genomes. The midpoint rooted tree is generated using the neighbor-joining
 method and pairwise distances are calculated as percentage identities of the
-alignments~\cite{saitou1987neighbor}.
+alignments~\citep{saitou1987neighbor}.
 
 The TFBS collections from all reference species are combined into a distinct
 binding model for each target species. For a given target genome, the
@@ -324,7 +324,7 @@ model in a target species be dominated by the evidence from many closely
 related-species, the contribution of each referenced collection is adjusted
 using the phylogeny, following the method that CLUSTALW uses to weigh sequence
 contributions for multiple sequence
-alignment~\cite{thompson1994clustal}. Multiple sources of evidence originating
+alignment~\citep{thompson1994clustal}. Multiple sources of evidence originating
 from a shared branch of the tree are down-weighted according to the number of
 sources in that subtree. Conversely, solitary sources of evidence in a subtree
 are up-weighted to equalize their contribution with that of more populated
@@ -346,7 +346,7 @@ softmax function:
 \end{equation}
 where $PSSM(s_i )$ is the PSSM score of the site starting at position $i$ and
 $PSSM(s_i^f)$ and $PSSM(s_i^r)$ are the scores of the site at position $i$ in
-forward and reverse strands, respectively~\cite{hobbs2016bayesian}.
+forward and reverse strands, respectively~\citep{hobbs2016bayesian}.
 
 To estimate the probability of regulation for each operon, we define two
 distributions for the set of PSSM scores of promoter regions. If the TF does
@@ -370,7 +370,7 @@ R \sim \alpha N(\mu_m, \sigma_m^2) + (1-\alpha) N(\mu_g, \sigma_g^2)
 To quantify how likely a gene is to be regulated by the TF, instead of relying
 on TF binding scores, we employ a Bayesian framework to calculate posterior
 probabilities of binding which has a natural
-interpretation~\cite{hobbs2016bayesian}. We define the probability of
+interpretation~\citep{hobbs2016bayesian}. We define the probability of
 regulation of an operon as the posterior probability of the mixture
 distribution of scores ($R$), given the PSSM scores of its promoter region
 ($D$):
@@ -411,7 +411,7 @@ P(R) = \sum_i w_i \frac{|M_i|}{|\mathcal{O}_i|}
 where $w_i$ is the weight associated with the reference motif $M_i$, $|M_i|$ is
 the size of the $i$th collection and $|\mathcal{O}_i|$ is the number of
 predicted operons of its genome. The second method is based on the
-informational requirements on TF binding motifs~\cite{schneider1986information,
+informational requirements on TF binding motifs~\citep{schneider1986information,
   schneider2000evolution, o2014informational}. Given the approximate equality
 $R_{\mathrm{sequence}} \approx R_{\mathrm{frequency}}$, the expected number of
 functional binding sites is $|\mathcal{G}| / 2^{R_{\mathrm{sequence}}}$ where
@@ -426,18 +426,18 @@ P(R) = \frac{|\mathcal{G}|}{2^{R_{\mathrm{sequence}}} |\mathcal{O}|}
 
 For the comparative analysis of TF regulation, we identify orthologous groups
 of genes using the best reciprocal BLAST hit
-approach~\cite{wall2003detecting}. Given the phylogenetic tree and the inferred
+approach~\citep{wall2003detecting}. Given the phylogenetic tree and the inferred
 posterior probabilities of regulation for genes in an orthologous group, we
 infer the state of regulation of the gene in ancestral species using ancestral
 state reconstruction. We use BayesTraits, a trait evolution analysis tool, to
 perform ancestral reconstruction of discrete states by fitting a
-continuous-time Markov model~\cite{pagel2004bayesian}. The rates of transitions
+continuous-time Markov model~\citep{pagel2004bayesian}. The rates of transitions
 among discrete states are estimated based on the distribution of states among
 the species. Given the estimated state transition rates, the ancestral states
 are reconstructed by calculating the likelihood of observing the states of
 species, having fixed the ancestral node at all possible states. The state of
 the ancestral node is determined as the one that maximizes the likelihood of
-observing the species data~\cite{pagel1997inferring, pagel1999maximum}.
+observing the species data~\citep{pagel1997inferring, pagel1999maximum}.
 
 For each orthologous group, we determine the discrete states of each species
 based on their inferred posterior probabilities of regulation. That is, for
@@ -474,7 +474,7 @@ the frequency of each state in 1,000 iterations (Figure~\ref{fig:asr}).
 CGB is publicly available with both command-line and graphical
 interfaces. In command-line interface, the user provides the input, the binding
 site collections, target genome accession numbers and configuration parameters,
-as a text file in JSON format~\cite{bray2014javascript} and the results are
+as a text file in JSON format~\citep{bray2014javascript} and the results are
 saved to files in the working directory. When using the graphical
 interface, the user provides the input through a form and browses the results
 rendered as HTML tables where the user can sort by posterior probabilities or
@@ -529,7 +529,7 @@ functions (Figure~\ref{fig:gui-input} and~\ref{fig:gui-output}).
 
 The primary mechanism for controlling the response to DNA damage in Bacteria is
 the SOS response, regulated by the transcription factor
-LexA~\cite{radman1975sos, erill2007aeons, michel2005after}. During normal
+LexA~\citep{radman1975sos, erill2007aeons, michel2005after}. During normal
 growth, LexA binds as a homodimer to specific sites upstream of genes and
 blocks their regulation. When DNA damage occurs, single-stranded DNA
 accumulates originating at replication forks. The other key protein in the
@@ -539,20 +539,20 @@ thereby promotes LexA self-cleavage which induces the SOS response.
 Unlike many other transcriptional regulators, LexA has binding motifs that vary
 significantly across different phyla. It has been reported that LexA binds to
 short inverted repeats (\texttt{GAAC-N4-GTTC}) in the Firmicutes and
-Actinobacteria~\cite{au2005genetic, davis2002definition}, whereas it displays
+Actinobacteria~\citep{au2005genetic, davis2002definition}, whereas it displays
 larger palindromic motifs (\texttt{CTGT-N8-ACAG}) in the
-Gammaproteobacteria~\cite{erill2003silico,
+Gammaproteobacteria~\citep{erill2003silico,
   fernandez2000identification}. Moreover, its binding motif is in the form of
 direct repeat (\texttt{GTTC-N7-GTTC}) in the
-Alphaproteobacteria~\cite{erill2004differences, fernandez1998identification}.
+Alphaproteobacteria~\citep{erill2004differences, fernandez1998identification}.
 This variability makes LexA an ideal example for the study of the evolution
 of transcriptional regulatory networks.
 
 
 In this section, we validated CGB platform by reenacting the comparative
 genomics analysis of LexA regulation in Gram-positive
-Bacteria~\cite{cornish2012inference}, originally performed with xFITOM and
-RegPredict~\cite{bhargava2010xfitom, novichkov2010regpredict}. 11 species from
+Bacteria~\citep{cornish2012inference}, originally performed with xFITOM and
+RegPredict~\citep{bhargava2010xfitom, novichkov2010regpredict}. 11 species from
 the Firmicutes (\textit{Bacillus subtilis} str. 168, \textit{Clostridium
   acetobutylicum} ATCC 824, \textit{Enterobacter faecalis} V583,
 \textit{Listeria monocytogenes} serotype 4b str. CLIP 80459,
@@ -594,10 +594,10 @@ binding sites in the collection to a length of 22 bp.
 \end{figure}
 
 Differences in the LexA-binding motif of Actinobacteria and Firmicutes have
-been reported before~\cite{jochmann2009genetic, van2010sos,
+been reported before~\citep{jochmann2009genetic, van2010sos,
   davis2002definition}. It has also been shown that the effect of this
 difference on search efficiency can be
-significant~\cite{cornish2012inference}. The difference between the
+significant~\citep{cornish2012inference}. The difference between the
 LexA-binding motifs of these two clades (Figure~\ref{fig:gram-positive-motifs})
 hence makes the performed analysis an excellent test case to demonstrate the
 effectiveness of combining multiple TF binding motifs, with different weights,
@@ -633,20 +633,20 @@ and Actinobacteria.  The core elements of the SOS response, \textit{recA} and
 maximum likelihood inference of the evolution of \textit{recA} regulation is
 shown in Figure~\ref{fig:ASR-a}.  In agreement with the hypothesis that
 translesion synthesis (TLS) is a part of core SOS regulon, TLS genes appear to
-be regulated by LexA~\cite{erill2007aeons, galhardo2009dinb,
+be regulated by LexA~\citep{erill2007aeons, galhardo2009dinb,
   boshoff2003dnae2}. However, consistent with the experimental data available
 for individual organisms, the results show that different genes are involved in
 translesion synthesis in each phylum. In the Firmicutes, DNA polymerase IV (encoded
 by \textit{dinB}) and UV-damage repair protein UvrX (encoded by \textit{uvrX};
 its regulation for ancestral species reconstructed in Figure~\ref{fig:ASR-b})
-contribute to the TLS mechanism~\cite{au2005genetic, van2010sos,
+contribute to the TLS mechanism~\citep{au2005genetic, van2010sos,
   cirz2007complete}. Instead of these two, Actinobacteria utilizes error-prone
 DNA-polymerase (encoded by \textit{dnaE2}) as part of the SOS-induced
-TLS~\cite{jochmann2009genetic, davis2002definition, boshoff2003dnae2}. In
+TLS~\citep{jochmann2009genetic, davis2002definition, boshoff2003dnae2}. In
 addition, LexA appears to regulate the expression of \textit{imuA'} which is
 involved in DNA damage-inducible mutagenesis and is a component of the
 \textit{imuA-imuB-dnaE2}-type mutagenic cassette widespread among bacterial
-genomes~\cite{erill2006dispersal}.
+genomes~\citep{erill2006dispersal}.
 
 \begin{figure}
   \centering

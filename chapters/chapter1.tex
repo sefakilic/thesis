@@ -13,14 +13,14 @@ gene expression: controlling the production rate of gene products.
 There are a variety of mechanisms to control gene expression at different
 levels of gene product synthesis, such as the regulation of transcriptional
 initiation, post-transcriptional RNA interference, and post-translational
-proteolysis~\cite{snyder2007molecular}. Genomic features such as gene copy
+proteolysis~\citep{snyder2007molecular}. Genomic features such as gene copy
 number, guanine-cytosine (GC) content, and codon usage patterns also affect the
-regulation of gene expression~\cite{gustafsson2004codon,
+regulation of gene expression~\citep{gustafsson2004codon,
   stranger2007relative}. Probably the most common mechanism employed by all
 cellular systems is the regulation of transcriptional
-initiation~\cite{browning2004regulation}. This is not surprising, because
+initiation~\citep{browning2004regulation}. This is not surprising, because
 regulation of transcription initiation is the most economical way for a cell to
-control the expression level of its genes~\cite{malacinski2005essentials}. The
+control the expression level of its genes~\citep{malacinski2005essentials}. The
 mechanisms at the pre-transcriptional level cannot be flexible since they would
 require changes in the genome. On the other hand, any mechanism following the
 transcription would be a waste of already produced messenger RNA (mRNA)
@@ -29,11 +29,11 @@ transcripts.
 DNA-binding proteins, called transcription factors (TF), play the central role
 in the regulation of transcription initiation. A TF activates or represses
 transcription initiation of a gene by assisting or blocking the binding of RNA
-polymerase to its promoter region~\cite{reznikoff1985regulation}. A TF
+polymerase to its promoter region~\citep{reznikoff1985regulation}. A TF
 recognizes and binds to specific DNA sequences, called transcription factor
-binding sites (TFBS), that are of length 10--20 bp~\cite{gerland2002physical,
+binding sites (TFBS), that are of length 10--20 bp~\citep{gerland2002physical,
   berg2004adaptive} and mostly located between -60 and +60 base pairs (bp)
-relative to the transcriptional start site~\cite{collado1991control}. This set
+relative to the transcriptional start site~\citep{collado1991control}. This set
 of similar, but not identical, TF binding sites describes the binding pattern
 that the TF looks for binding, known as transcription factor binding motif. An
 example of sequences recognized by TF, the binding sites of the hypothetical
@@ -67,11 +67,11 @@ protein Hyp is given in Table~\ref{tab:lexa-motif}.
 
 The classical representation of a binding motif is the consensus sequence, the
 sequence of the most frequent base at each position of the aligned binding
-sites~\cite{pierce2012genetics}. The consensus sequence for the binding motif
+sites~\citep{pierce2012genetics}. The consensus sequence for the binding motif
 in Table~\ref{tab:lexa-motif} is \texttt{AGGTAAACCT}. Although consensus
 sequences are widely used in molecular biology, and they describe the binding
 motif in a very simple way, they have flaws due to this very
-simplicity~\cite{schneider2002consensus}. For example, a column that contains
+simplicity~\citep{schneider2002consensus}. For example, a column that contains
 an adenine most of the time is represented by an A, but the consensus sequence
 does not say anything about the frequency of bases. It is equally likely that
 the position might contain 95\% A or it could have 51\% A and 49\% T. The
@@ -79,8 +79,8 @@ problem occurs when one looks for additional binding sites using the consensus
 sequence.  If no mismatch is allowed, almost half of acceptable sequences could
 be missed in the case of 51\% A and 49\% T. For example, -10 region of
 bacterial promoters has the consensus sequence \texttt{TATAAT}, also known as
-Pribnow box~\cite{pribnow1975nucleotide}. However,  very few promoters
-contain the exact consensus sequence~\cite{lisser1993compilation}. Even when
+Pribnow box~\citep{pribnow1975nucleotide}. However,  very few promoters
+contain the exact consensus sequence~\citep{lisser1993compilation}. Even when
 mismatches are allowed, allowing a mismatch in a very well-conserved column
 is equivalent to allowing a mismatch in a position that is not
 conserved. A better representation of the binding motif that captures more
@@ -156,7 +156,7 @@ T & -0.32 & -1.91 & -334.10 &  2.00   & -1.91 & -0.32 & -334.10 & -334.10 &  -1.
 
 \subsection{Information content of TF binding motifs}
 
-By applying Shannon’s information theory~\cite{shannon1948mathematical} to TF
+By applying Shannon’s information theory~\citep{shannon1948mathematical} to TF
 binding motifs, entropy, the uncertainty of observing any particular base in
 the genomic background is defined as:
 
@@ -173,7 +173,7 @@ the alignment is defined as:
 \end{equation}
 Putting together these two uncertainties, the information content (IC) of a
 position is defined as the decrease in uncertainty by observing a particular
-base in that position~\cite{schneider1986information}.
+base in that position~\citep{schneider1986information}.
 
 \begin{equation}
   \label{eq:rseq}
@@ -188,7 +188,7 @@ And finally, assumping positional independence, the total IC of the motif is
 where $L$ is the motif length.
 
 Sequence logos are a commonly used graphical representation of binding
-motifs~\cite{schneider1990sequence, crooks2004weblogo}. A sequence logo
+motifs~\citep{schneider1990sequence, crooks2004weblogo}. A sequence logo
 represents each column of the motif with a stack of letters such that the
 height of the stack is the information content of the column whereas the
 relative heights of each letter in the column represents their relative
@@ -208,38 +208,38 @@ The interaction between a TF and its binding sites is essential for
 regulation. To maintain the regulatory interaction, a mutation in one of these
 elements (i.e. TF and its binding sites) must be counterbalanced by a change in
 the other element. This co-evolution between TFs and their binding motifs has
-been observed for eukaryotic TFs~\cite{yang2011correlated}. In closely related
+been observed for eukaryotic TFs~\citep{yang2011correlated}. In closely related
 Bacteria, it has been shown that orthologous TFs, the products of genes that
 evolved from a common ancestor by speciation, tend to have conserved binding
-motifs~\cite{makarova2001conservation}. Although this tendency has been
+motifs~\citep{makarova2001conservation}. Although this tendency has been
 observed among more distant Bacteria for some TFs (e.g. ArgR/AhrC and HrcA
-regulating arginine metabolism~\cite{maas1994arginine, klingel1995binding}), it
+regulating arginine metabolism~\citep{maas1994arginine, klingel1995binding}), it
 does not hold for some other TFs such as SOS response regulator LexA in
-Gram-negative Bacteria~\cite{walker1985inducible} and DinR, its ortholog in
-Gram-positive Bacteria~\cite{winterling1998bacillus}.
+Gram-negative Bacteria~\citep{walker1985inducible} and DinR, its ortholog in
+Gram-positive Bacteria~\citep{winterling1998bacillus}.
 
 Another aspect of the evolution of transcriptional regulatory elements is the
 co-evolution between the TF and its regulon. Conservation of regulons has been
 observed across closely related genomes having orthologous
-TFs~\cite{mironov1999computer, tan2001comparative}. Another study reported
+TFs~\citep{mironov1999computer, tan2001comparative}. Another study reported
 conservation of the overall function in the regulon controlled by orthologous
 TFs, despite pervasive gain and loss of target genes, in
-eukaryotes~\cite{habib2012functional}. Interestingly, it has also been
+eukaryotes~\citep{habib2012functional}. Interestingly, it has also been
 suggested that, among distantly related Bacteria, orthologous TFs may have
 different functions and regulate different
-genes~\cite{price2007orthologous}. Finally, it has also been suggested that
+genes~\citep{price2007orthologous}. Finally, it has also been suggested that
 transcriptional regulatory networks (TRN) are highly dynamic, whereas TFs tend to
-be more conserved~\cite{babu2006evolutionary, chavez2006bacterial}.
+be more conserved~\citep{babu2006evolutionary, chavez2006bacterial}.
 
 \section{Comparative Genomics}
 
 Since the whole genome sequencing of two bacterial species, \textit{Haemophilus
-  influenzae} and \textit{Mycoplasma genitalium}~\cite{fleischmann1995whole,
+  influenzae} and \textit{Mycoplasma genitalium}~\citep{fleischmann1995whole,
   fraser1995minimal}, comparative genomics has become a standard tool to
 analyze evolutionary relationships among species. It has been used many times
 to characterize transcriptional regulatory networks and to investigate their
 evolutionary relationships across different
-Bacteria~\cite{gelfand2000prediction, ravcheev2013genomic,
+Bacteria~\citep{gelfand2000prediction, ravcheev2013genomic,
   meireles2009comparative, kellis2004methods, erill2004differences,
   erill2007aeons, sanchez2012analysis, cornish2012inference}.
 
@@ -254,7 +254,7 @@ to validate putative sites identified in the previous step. This aggregation of
 results reduces the number of false positives dramatically by assuming that
 only orthologs of regulated genes will systematically display TF-binding sites
 in their promoters whereas false positives should be randomly scattered across
-genomes~\cite{rodionov2007comparative}.
+genomes~\citep{rodionov2007comparative}.
 
 
 \section{Statement of the Problem}
@@ -264,19 +264,19 @@ bioinformatics. New technologies that shift the nature and amount of
 experimental data require improvements on existing datasets compiled using
 traditional data collection process, and methods performing on these datasets.
 
-The high-throughput technologies such as ChIP-Seq~\cite{bailey2013practical}
+The high-throughput technologies such as ChIP-Seq~\citep{bailey2013practical}
 have increased the amount of TF binding data tremendously. However, the
 increasing amount of the available experimental TFBS data challenges the
 underlying definition and the collection process of TF-binding site
-data~\cite{salgado2013regulondb}. Although there are well-established
-eukaryotic TF-binding site databases~\cite{mathelier2015jaspar,
+data~\citep{salgado2013regulondb}. Although there are well-established
+eukaryotic TF-binding site databases~\citep{mathelier2015jaspar,
   matys2003transfac}, their counterparts in Bacteria domain are mostly
-organism-specific~\cite{salgado2013regulondb, sierro2008dbtbs,
+organism-specific~\citep{salgado2013regulondb, sierro2008dbtbs,
   jacques2005mtbreglist, pauling2012coryneregnet}. Some of these databases have
 not been updated in several years, thereby missing huge amounts of
-data~\cite{munch2003prodoric}. Also, these databases often mix experimentally
+data~\citep{munch2003prodoric}. Also, these databases often mix experimentally
 validated sites with computationally predicted
-ones~\cite{kazakov2007regtransbase}, introducing biases in the machine learning
+ones~\citep{kazakov2007regtransbase}, introducing biases in the machine learning
 and comparative genomics techniques that depend on them to model TF-binding
 site interactions. Closing the circle, the putative binding sites identified by
 these biased methods are captured by the databases and mixed with the
@@ -286,7 +286,7 @@ Comparative genomics can leverage the vast amount of genomics sequences to
 reconstruct and analyze TRNs in Bacteria, but its efficacy hinges on the
 ability to transfer regulatory networks from reference species to the genomes
 under analysis. Several methods have been proposed to transfer regulatory
-information between bacterial species~\cite{babu2009methods,
+information between bacterial species~\citep{babu2009methods,
   baumbach2010power}, but the paucity and distributed nature of experimental
 data on bacterial transcriptional networks have prevented their systematic
 evaluation so far.
@@ -301,7 +301,7 @@ of some features required for comparative analysis, such as ortholog detection,
 they restrict the user to a large yet still limited and irregularly updated
 collection of genomes. Therefore, they are not suitable for TRN analysis of
 recently sequenced and annotated genomes that are being added to central
-sequence databases such as NCBI RefSeq~\cite{o2015reference} every
+sequence databases such as NCBI RefSeq~\citep{o2015reference} every
 day. Furthermore, binding site predictions are usually reported with raw scores
 (e.g. PSSM scores), requiring the user to predefine a threshold to determine
 what constitutes a putative binding site. Setting a threshold, however,
@@ -395,7 +395,7 @@ hypotheses on TF regulation.
 
 \textit{Development of a prokaryotic-wide TFBS database.}  The efforts to
 capture the interaction of TFs with their target sites led to CollecTF, a
-database of TFBS in the Bacteria domain~\cite{kilic2013collectf,
+database of TFBS in the Bacteria domain~\citep{kilic2013collectf,
   kilicc2016data}. CollecTF compiles data on experimentally validated,
 naturally occurring TFBS across the Bacteria domain, placing great emphasis on
 the curation process, the quality and availability of the stored data and fully
@@ -406,9 +406,9 @@ adopting a sustainable model that encourages direct author submissions in
 combination with in-house validation and curation of published
 literature. Since its inception, CollecTF has progressively become a portal for
 the annotation and submission of information on transcriptional regulatory
-elements to major biological resources such as RefSeq~\cite{o2015reference},
-UniProtKB~\cite{uniprot2014uniprot}, and the Gene Ontology
-Consortium~\cite{gene2013gene}. As a database, it provides enhanced search and
+elements to major biological resources such as RefSeq~\citep{o2015reference},
+UniProtKB~\citep{uniprot2014uniprot}, and the Gene Ontology
+Consortium~\citep{gene2013gene}. As a database, it provides enhanced search and
 browsing, targeted data exports, binding motif analysis tools and integration
 with motif discovery and search platforms.
 
@@ -508,16 +508,16 @@ genomics analyses.
 
 The most popular model used to approximate specific TF-DNA interactions is the
 PSSM\@. A PSSM assumes independence among its different columns. Many studies
-have reported that this assumption does not hold true~\cite{man2001non,
+have reported that this assumption does not hold true~\citep{man2001non,
   bulyk2002nucleotides, tomovic2007position, osada2004comparative} and others
 report that the additive PSSM model is a very good approximation of the
-protein-DNA binding~\cite{benos2002additivity}. Despite the arguments on both
+protein-DNA binding~\citep{benos2002additivity}. Despite the arguments on both
 sides and the existence of many different types of algorithms including
-biophysical models~\cite{stormo1998specificity, djordjevic2003biophysical} and
-Hidden Markov Models~\cite{sinha2003probabilistic, drawid2009ohmm,
+biophysical models~\citep{stormo1998specificity, djordjevic2003biophysical} and
+Hidden Markov Models~\citep{sinha2003probabilistic, drawid2009ohmm,
   salzberg1998microbial}, the PSSM is still the standard model for predicting
 binding sites. Although the positional independence assumption can be relaxed
-with more complex models~\cite{ben2005identification, zhao2012improved,
+with more complex models~\citep{ben2005identification, zhao2012improved,
   siddharthan2010dinucleotide, barash2003modeling}, the increased number of
 parameters introduces the potential for overfitting and requires more data than
 is generally available. Consequently, in this study, the PSSM is used to model
@@ -543,9 +543,9 @@ genomics analysis platform. It details each step of the pipeline, from input
 processing to visualization and reporting of the results. Chapter 5 studies the
 LexA-binding motif of the Verrucomicrobia, a recently established bacterial
 phylum of growing interest due to the association of Verrucomicrobia species
-with several eukaryotic hosts~\cite{sait2011genomic}, their prominence in many
-soil communities~\cite{bergmann2011under} and a significant role in the
-adaptability of the human gut microbiome~\cite{dubourg2013high}. In chapter 5,
+with several eukaryotic hosts~\citep{sait2011genomic}, their prominence in many
+soil communities~\citep{bergmann2011under} and a significant role in the
+adaptability of the human gut microbiome~\citep{dubourg2013high}. In chapter 5,
 using CGB, the evolutionary analysis of the SOS response in this phylum is
 performed, providing novel insights into the molecular mechanisms driving its
 evolution.

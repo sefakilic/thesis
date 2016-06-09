@@ -7,24 +7,24 @@ The binding of transcription factors (TF) to target sites in genomic DNA is a
 defining element of transcriptional regulatory networks (TRN). Bacterial
 transcription networks rely extensively on direct TF–DNA interactions and
 display relatively lower complexity than their eukaryotic counterparts
-\cite{wunderlich2009different, remenyi2004combinatorial}. This has generated
+\citep{wunderlich2009different, remenyi2004combinatorial}. This has generated
 substantial interest in modeling and cataloging bacterial TF-binding site
 interactions, leading to the emergence of several model organism-based
 databases aimed at compiling TF-binding sites to define TRN and explore their
-interplay with other cellular systems~\cite{salgado2013regulondb,
+interplay with other cellular systems~\citep{salgado2013regulondb,
   jacques2005mtbreglist, pauling2012coryneregnet, sierro2008dbtbs}, as well as
 two databases dedicated to compiling gene-regulation information across
-multiple prokaryotic species~\cite{munch2005virtual,
+multiple prokaryotic species~\citep{munch2005virtual,
   kazakov2007regtransbase}. In recent years, the development of high-throughput
 techniques for the identification of TF-binding sites, like ChIP-Seq
-\cite{mardis2007chip}, has led to a rising influx of data that challenges the
+\citep{mardis2007chip}, has led to a rising influx of data that challenges the
 traditional manual curation process and the underlying definition of TF-binding
-sites in current databases~\cite{salgado2013regulondb}. In turn, the increasing
+sites in current databases~\citep{salgado2013regulondb}. In turn, the increasing
 availability of such data and the mounting evidence on the complexity of
 TF-binding site recognition and regulatory logic in
-Bacteria~\cite{hijum2009mechanisms, paul2007integration, barnard2004regulation}
+Bacteria~\citep{hijum2009mechanisms, paul2007integration, barnard2004regulation}
 have led to the proliferation of machine learning and comparative genomics
-techniques to model TF-binding site interactions~\cite{narlikar2013mumod,
+techniques to model TF-binding site interactions~\citep{narlikar2013mumod,
   maienschein2012improved, zwir2005dissecting}. These approaches require the
 integration of genome-wide, multi-species knowledge on TF binding, using a
 broader definition of TF-binding site and having direct access to the
@@ -34,17 +34,17 @@ site databases. Different databases use different ranking systems for
 experimental evidence, which is not always made directly accessible, and will
 often combine experimentally supported sites with computational predictions, as
 well as naturally occurring sites with artificially generated
-ones. CollecTF~\cite{kilic2013collectf} seeks to address these issues and
+ones. CollecTF~\citep{kilic2013collectf} seeks to address these issues and
 complement existing databases by providing high-quality, transparent annotation
 on naturally occurring TF-binding sites across the Bacteria domain, explicitly
 integrating multiple sources of evidence and binding site definitions into a
 highly accessible, machine readable and fully customizable database. In line
-with previous initiatives~\cite{griffith2008oreganno}, CollecTF combines
+with previous initiatives~\citep{griffith2008oreganno}, CollecTF combines
 in-house curation with direct submission from authors, and seeks to foster a
 sustainable external submission model through its integration with NCBI RefSeq
-\cite{pruitt2007ncbi}, UniProt KnowledgeBase~\cite{uniprot2014uniprot},
-Evidence Ontology~\cite{chibucos2014standardized} and Gene
-Ontology~\cite{gene2004gene}.
+\citep{pruitt2007ncbi}, UniProt KnowledgeBase~\citep{uniprot2014uniprot},
+Evidence Ontology~\citep{chibucos2014standardized} and Gene
+Ontology~\citep{gene2004gene}.
 
 \section{Database Content}
 
@@ -53,7 +53,7 @@ identified in natural DNA sequences. Historically, the definition for
 TF-binding site has been associated to the presence of a well-defined
 TF-binding motif, but in the last decade it has become increasingly apparent
 that many TFs bind DNA without clear-cut sequence
-determinants~\cite{hijum2009mechanisms, paul2007integration,
+determinants~\citep{hijum2009mechanisms, paul2007integration,
   barnard2004regulation}. To accommodate this diversity without losing the
 high-quality annotation of motif determinants, CollecTF curators classify sites
 as motif associated or non-motif associated. Motif associated sites are either
@@ -86,14 +86,14 @@ TF representation for bacterial clades, such as the \textit{Vibrio} and
 \textit{Pseudomonadaceae} families for which
 abundant knowledge on the intertwined transcriptional regulation of virulence
 is available in the literature but poorly represented in available
-databases~\cite{matson2007regulatory}. Since its inception in 2013, CollecTF
+databases~\citep{matson2007regulatory}. Since its inception in 2013, CollecTF
 has compiled over 9,750 experimentally-validated TF-binding sites, mapping to
 more than 390 unique TF instances from over 240 transcription factors in over
 100 bacterial species (Table~\ref{tab:collectf-stats}). This has situated
 CollecTF at the forefront of transcription regulation databases in Bacteria,
 rivaling the content and breadth of comparable initiatives, such as the
-\textit{Escherichia coli}-centered RegulonDB~\cite{salgado2013regulondb} or the
-prokaryotic-wide RegTransBase databases~\cite{kazakov2007regtransbase}.
+\textit{Escherichia coli}-centered RegulonDB~\citep{salgado2013regulondb} or the
+prokaryotic-wide RegTransBase databases~\citep{kazakov2007regtransbase}.
 
 \begin{table}
   \centering
@@ -135,7 +135,7 @@ process is the central element of the relational database structure of CollecTF
 (Figure~\ref{fig:data-structure}). A curation essentially establishes a link
 from a TF and a number of sites as reported in a scientific publication to a
 set of genome positions and a protein accession in the UniProtKB
-database~\cite{uniprot2014uniprot}. The mapping process involves an automated
+database~\citep{uniprot2014uniprot}. The mapping process involves an automated
 search of reported sites in the target reference sequence and manual
 verification of their genomic location by the curator. Exact matching sequences
 for each binding site are first identified in the reference genome and their
@@ -193,7 +193,7 @@ mobility shift assays). Users can elicit reports at any time during browsing or
 searching, and have the option of condensing the report or reporting by
 individual species/TFs. Instead of relying on pre-computed motif
 representations, motif associated sites are realigned dynamically with LASAGNA
-and displayed with WebLogo~\cite{crooks2004weblogo, lee2013lasagna}, providing
+and displayed with WebLogo~\citep{crooks2004weblogo, lee2013lasagna}, providing
 a fluid representation of TF-binding motifs that incorporates all the available
 sources of evidence selected by the user (Figure~\ref{fig:weblogo}). All report
 pages offer a detailed view of TF-binding sites in their genomic context with
@@ -262,7 +262,7 @@ different contexts. Pairs of TF-binding motifs, resulting from two independent
 custom searches by the user, can be compared using a wide variety of methods,
 such as an analysis of the pair-wise site Levenshtein distance within and
 between motifs, the Kullback-Leibler divergence or the Pearson correlation
-coefficient between motifs~\cite{vanet1999promoter, mahony2007stamp}. This
+coefficient between motifs~\citep{vanet1999promoter, mahony2007stamp}. This
 allows users to examine directly, for instance, the effects of different
 criteria when requesting experimental support for TF-binding sites, or the
 variability of TF-binding motifs across species and taxonomical groups
@@ -271,7 +271,7 @@ custom-generated collections of TF-binding sites is their use in TF-binding
 site search and motif discovery algorithms. CollecTF provides a TF-binding
 search service that allows users to search genome assemblies, as well as
 integration with the MEME discovery suite as a reference database for
-TF-binding site search and motif discovery~\cite{bailey2006meme}.
+TF-binding site search and motif discovery~\citep{bailey2006meme}.
 
 \begin{figure}
   \centering
@@ -294,7 +294,7 @@ experimental and computational research across all biological science
 disciplines. Beyond major coordinated resources hosted by federal institutions,
 such as the National Center for Biotechnological Information (NCBI) or the
 European Bioinformatics Institute (EMBL-EBI), the biological database arena is
-dominated by domain-specific databases~\cite{chen2007online,
+dominated by domain-specific databases~\citep{chen2007online,
   chandras2009models, bolser2012metabase, galperin20152015}. These databases
 aggregate a community of researchers devoted to the highly-specific annotation
 of a particular facet of biology (e.g.\ transcriptional regulation in Bacteria)
@@ -302,20 +302,20 @@ and have become an essential resource for biomedical research in many different
 ways. Beyond compiling and making accessible highly-specific knowledge and data
 to researchers in the field, these resources typically foster community
 building and promote the development of standards, like controlled vocabularies
-and ontologies~\cite{howe2008big, dunin2006modomics, schindelman2011worm,
+and ontologies~\citep{howe2008big, dunin2006modomics, schindelman2011worm,
   costa2013drosophila}. The wide variety and rapid proliferation of
 domain-specific databases has generated a fragile ecosystem plagued by
 diverging standards, short lifespans and lack of interoperability, making
-information hard to access or gone when needed~\cite{wren2008databases}. Given
+information hard to access or gone when needed~\citep{wren2008databases}. Given
 the time-intensive nature of the biocuration process, this “data tomb” effect
 does not only have a direct repercussion on a database’s target domain, but
-represents rather a net loss in public investment~\cite{merali2005databases,
+represents rather a net loss in public investment~\citep{merali2005databases,
   howe2008big, bastow2010sustainable}.
 
 Proposed models for database financial sustainability are difficult to adopt
 for databases addressing topics unattractive to private funders. They also tend
 to restrict data sharing and limit community
-participation~\cite{chandras2009models, bastow2010sustainable}. Hence, without
+participation~\citep{chandras2009models, bastow2010sustainable}. Hence, without
 overt commitment by public agencies for long-term funding of domain-specific
 databases, data and knowledge curated at great expense may face the risk of
 becoming inaccessible due to proprietary restrictions or database demise. A
@@ -330,13 +330,13 @@ specialized services, and guarantee long-time accessibility to curated data.
 
 Since its launch in 2013, CollecTF has been actively working to increase its
 interoperability, visibility and long-term accessibility. In collaboration with
-the NCBI RefSeq~\cite{pruitt2007ncbi}, CollecTF has streamlined the process for
+the NCBI RefSeq~\citep{pruitt2007ncbi}, CollecTF has streamlined the process for
 direct annotation of RefSeq genome records. CollecTF has also established a
 collaboration with the Evidence Ontology (ECO) to standardize its experimental
 evidence terms and increase its
-interoperability~\cite{chibucos2014standardized}, and set up collaborations
-with the EMBL-EBI UniProt~\cite{uniprot2014uniprot} and Gene Ontology
-Annotation (GOA) teams~\cite{ashburner2000gene} for the cross-referencing of
+interoperability~\citep{chibucos2014standardized}, and set up collaborations
+with the EMBL-EBI UniProt~\citep{uniprot2014uniprot} and Gene Ontology
+Annotation (GOA) teams~\citep{ashburner2000gene} for the cross-referencing of
 CollecTF records and the submission of Gene Ontology annotations. Hence,
 CollecTF currently aims to contribute TF-binding site information not only in
 the form of direct annotations on RefSeq genome records, but also as regulon
@@ -365,7 +365,7 @@ experimental evidence for the annotation including PubMed identifiers for the
 supporting publications and a \verb|db_xref| link to the original CollecTF
 record (Figure~\ref{fig:dbxref}). The RefSeq submission process is now completely standardized
 and has been upgraded to operate with the new non-redundant protein
-sequences~\cite{o2015reference}. In agreement with the NCBI RefSeq, CollecTF
+sequences~\citep{o2015reference}. In agreement with the NCBI RefSeq, CollecTF
 has focused initially on the targeted and exhaustive annotation of individual
 genomes and, to date, it has populated 39 complete genomes with over 1,300
 TF-binding site instances corresponding to more than 70 transcription factors,
@@ -403,7 +403,7 @@ genomic location, the experimental evidence and literature sources, the genes
 regulated through the binding event and links to external databases providing
 additional information on the binding mechanism (e.g.\ the Protein Data Bank),
 the bound sites or their regulatory role (e.g. Gene Expression
-Omnibus)~\cite{berman2000protein, barrett2005ncbi}
+Omnibus)~\citep{berman2000protein, barrett2005ncbi}
 (Figure~\ref{fig:uniprot-integration}). The dual annotation of NCBI RefSeq
 genome records and UniProtKB entries hence will provide a convenient way to
 access the information available in CollecTF from the two constituting elements
@@ -467,7 +467,7 @@ by the submitter during the curation process
 (Figure~\ref{fig:gpad}). Gene-centric statements capture the involvement of
 regulated genes in biological processes related to the transcription factor,
 such as the response to DNA damage (GO:0006974) mediated in most bacterial
-clades by the transcriptional repressor LexA~\cite{erill2007aeons}. Biological
+clades by the transcriptional repressor LexA~\citep{erill2007aeons}. Biological
 processes related to a particular transcription factor are defined by curators
 and assigned individually to regulated genes during the curation process. Upon
 curation submission, this assignment is automatically encoded as a GO
@@ -528,7 +528,7 @@ GO:0045893 & positive regulation of transcription, DNA-templated\\
 \end{table}
 
 TF- and gene-centric GO annotations stemming from validated curations are
-automatically appended to the CollecTF GPAD file~\cite{gene2013gene},
+automatically appended to the CollecTF GPAD file~\citep{gene2013gene},
 accessible through a static CollecTF
 URL\footnote{\url{http://collectf.org/static/collectf.gpad}}. GO annotations
 generated by CollecTF will be periodically collected by the EMBL-EBI Gene
