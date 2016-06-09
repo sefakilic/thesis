@@ -55,9 +55,11 @@ general-purpose platforms to analyze bacterial TF binding and regulation. One
 such platform is Visual Footprint, an online framework for prediction of TF
 binding sites using PRODORIC database as the data source, and for the
 visualization of search results in their genomic
-context~\cite{munch2005virtual, munch2003prodoric}
+context~\cite{munch2005virtual, munch2003prodoric}. Visual Footprint allows the
+user to search a given PSSM in the promoter regions of a selected genome, but
+does not provide comparative genomics capabilities.
 
-Another platform that allows comparative analysis of multiple genomes is
+One platform that allows comparative analysis of multiple genomes is
 RegPredict, a system for regulon inference and comparative genomics in Bacteria
 domain, integrated with the literature-based TF binding site database
 RegTransBase~\cite{novichkov2010regpredict,
@@ -251,12 +253,9 @@ distance threshold for all species would not perform well since intergenic
 distances within operons vary across
 species~\cite{rogozin2002congruent}. Therefore, for a given genome, the
 distance threshold can be calculated using the intergenic distance distribution
-of adjacent genes on the same strand. Given that about half of all protein
-coding genes in bacterial genomes are located in operons~\cite{price2006life} and pairs
-of adjacent genes within the same operon tend to be closer than pairs of genes
-in different operons, Figure~\ref{fig:operon-prediction-b} demonstrates that
-mean intergenic distance of adjacent genes on the same strand is a good
-estimator of the optimal intergenic distance threshold.
+of adjacent genes on the same strand. Figure~\ref{fig:operon-prediction-b}
+demonstrates that mean intergenic distance of adjacent genes on the same strand
+is a good estimator of the optimal intergenic distance threshold.
 
 \begin{figure}
   \centering
