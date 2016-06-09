@@ -5,7 +5,7 @@
 \usepackage{graphicx}
 \usepackage{fullpage}
 \usepackage{lineno}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage[round]{natbib}
 \usepackage{setspace}
 \usepackage{booktabs}
 \usepackage{array}
@@ -22,16 +22,19 @@
 \DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n} % Reset mathcal font to default
 \def\labelitemi{--}
 
+\usepackage[none]{hyphenat}
+\sloppy
+
+
 \title{Comparative Genomics of Transcriptional Regulatory Networks in Bacteria}
 \author{Sefa Kılıç}
-
+\date{}
 
 \begin{document}
 
-\linenumbers
 \doublespacing
 
-%\maketitle
+\maketitle
 
 \tableofcontents
 
@@ -48,8 +51,8 @@
 \include{chapters/chapter6}
 
 \singlespacing
-\bibliographystyle{unsrt}
+\bibliographystyle{kbib}
 % github.com/sefakilic/bib
-\bibliography{/Users/sefa/Dropbox/bib/bibliography}
+\bibliography{/home/sefa/Dropbox/bib/bibliography}
 
 \end{document}
