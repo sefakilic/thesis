@@ -206,7 +206,7 @@ motif in Table~\ref{tab:lexa-motif} is given in Figure~\ref{fig:lexa}.
 
 The interaction between a TF and its binding sites is essential for
 regulation. To maintain the regulatory interaction, a mutation in one of these
-elements (i.e. TF and its binding sites) must be counterbalanced by a change in
+elements (i.e. TF or its binding sites) must be counterbalanced by a change in
 the other element. This co-evolution between TFs and their binding motifs has
 been observed for eukaryotic TFs~\citep{yang2011correlated}. In closely related
 Bacteria, it has been shown that orthologous TFs, the products of genes that
@@ -412,22 +412,23 @@ Consortium~\citep{gene2013gene}. As a database, it provides enhanced search and
 browsing, targeted data exports, binding motif analysis tools and integration
 with motif discovery and search platforms.
 
-\textit{Benchmarking of TF binding motif and regulon transfer methods.}
-As part of the systematic benchmark of the transfer methods, the motif- and
-accuracy-based metrics that assess the results of regulatory network transfer
-were evaluated and the precision-recall area-under-the-curve was identified as
-the best metric for this purpose due to the class-imbalanced nature of the
-problem. Methods assuming conservation of the TF binding motif (motif-based)
-were shown to outperform substantially those assuming conservation of regulon
-composition (network-transfer), even though their efficiency can decrease
-sharply with increasing phylogenetic distance. Variations of the basic
-motif-transfer method did not yield significant improvements in transfer
-accuracy. The results indicate that detection of a large enough number of
-regulated orthologs is critical for network-based transfer methods, but
-relaxing orthology requirements does not improve results. Using the
-transcriptional regulators LexA and Fur as case examples, it was also shown how
-DNA-binding domain sequence similarity can yield confounding results as an
-indicator of transfer efficiency for motif-based methods.
+\textit{Benchmarking of TF binding motif and regulon transfer methods.}  As
+part of the systematic benchmark of the transfer
+methods~\cite{kilic2015assessment}, the motif- and accuracy-based metrics that
+assess the results of regulatory network transfer were evaluated and the
+precision-recall area-under-the-curve was identified as the best metric for
+this purpose due to the class-imbalanced nature of the problem. Methods
+assuming conservation of the TF binding motif (motif-based) were shown to
+outperform substantially those assuming conservation of regulon composition
+(network-transfer), even though their efficiency can decrease sharply with
+increasing phylogenetic distance. Variations of the basic motif-transfer method
+did not yield significant improvements in transfer accuracy. The results
+indicate that detection of a large enough number of regulated orthologs is
+critical for network-based transfer methods, but relaxing orthology
+requirements does not improve results. Using the transcriptional regulators
+LexA and Fur as case examples, it was also shown how DNA-binding domain
+sequence similarity can yield confounding results as an indicator of transfer
+efficiency for motif-based methods.
 
 \textit{Development of a comparative genomics analysis platform.} Following the
 compilation of data and assessment of transfer methods, CGB, a comparative
