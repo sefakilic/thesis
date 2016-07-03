@@ -157,19 +157,20 @@ data.
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{figures/chapter2/data-structure}
-  \caption{Schematic representation illustrating the CollecTF data structure,
-    curation and navigation processes. (Left panel) The curation table is the
-    pivotal element of the relational design in CollecTF, providing a central
-    link to all the other tables in the database and establishing a link
-    between reported TF-binding sites, the evidence supporting them, their
-    regulatory effects on genes and their mapped instances in a reference
-    genome. (Right panel) Navigation is initiated by browsing or customized
-    search, leading to a dynamically generated report that can be cumulative or
-    individualized for each TF/species pair. Motif alignments and logos are
-    provided for visualization, together with export functions to FASTA and
-    flat-file formats. Users can link out to specific site reports and link-out
-    to curation reports to evaluate all the supporting evidence for reported
-    sites and the genome mapping process.}
+  \caption[Schematic representation illustrating the CollecTF data structure,
+  curation and navigation processes.]{Schematic representation illustrating the
+    CollecTF data structure, curation and navigation processes. (Left panel)
+    The curation table is the pivotal element of the relational design in
+    CollecTF, providing a central link to all the other tables in the database
+    and establishing a link between reported TF-binding sites, the evidence
+    supporting them, their regulatory effects on genes and their mapped
+    instances in a reference genome. (Right panel) Navigation is initiated by
+    browsing or customized search, leading to a dynamically generated report
+    that can be cumulative or individualized for each TF/species pair. Motif
+    alignments and logos are provided for visualization, together with export
+    functions to FASTA and flat-file formats. Users can link out to specific
+    site reports and link-out to curation reports to evaluate all the
+    supporting evidence for reported sites and the genome mapping process.}
 \label{fig:data-structure}
 \end{figure}
 
@@ -206,12 +207,14 @@ for download.
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/chapter2/weblogo}
-  \caption{(A) Sequence logo for LexA-binding sites in the Firmicutes (top) and
-    in \textit{Bacillus subtilis} (bottom). (B) Sequence logo for Fur-binding
-    sites with experimental evidence of binding (top) or experimental evidence
-    of regulation (bottom). Both examples are extracted from dynamically
-    generated CollecTF reports and illustrate the ability to customize queries
-    and the fluidity inherent to the concept of TF-binding motif in CollecTF.}
+  \caption[Sequence logos for LexA-binding sites in the Firmicutes and
+  \textit{Bacillus subtilis}.]{(A) Sequence logo for LexA-binding sites in the
+    Firmicutes (top) and in \textit{Bacillus subtilis} (bottom). (B) Sequence
+    logo for Fur-binding sites with experimental evidence of binding (top) or
+    experimental evidence of regulation (bottom). Both examples are extracted
+    from dynamically generated CollecTF reports and illustrate the ability to
+    customize queries and the fluidity inherent to the concept of TF-binding
+    motif in CollecTF.}
 \label{fig:weblogo}
 \end{figure}
 
@@ -227,22 +230,24 @@ for download.
   \caption{}
   \end{subfigure}
 
-  \caption{Screenshot of a dynamically generated report of LexA-binding sites
-    in the Gammaproteobacteria as (a) individual TF/species pair (split)
-    reports and (b) an ensemble report integrating all Gammaproteobacteria
-    sites of LexA.}
+  \caption[Screenshot of a dynamically generated report of LexA-binding sites
+  in the Gammaproteobacteria.]{Screenshot of a dynamically generated report of
+    LexA-binding sites in the Gammaproteobacteria as (a) individual TF/species
+    pair (split) reports and (b) an ensemble report integrating all
+    Gammaproteobacteria sites of LexA.}
 \label{fig:motif-reports}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/chapter2/individual-site}
-  \caption{Snapshot of the site report page for a \textit{Pseudomonas putida}
-    LexA-binding site, illustrating the integration of supporting experimental
-    evidence and including out-links to curations, publications, technique
-    descriptions and NCBI Gene records. Like all other site report pages, this
-    record is directly accessible through its \texttt{db\_xref} link at
-    \url{http://collectf.org/EXPSITE_000014c0}.}
+  \caption[Snapshot of the site report page for a \textit{Pseudomonas putida}
+  LexA-binding site.]{Snapshot of the site report page for a
+    \textit{Pseudomonas putida} LexA-binding site, illustrating the integration
+    of supporting experimental evidence and including out-links to curations,
+    publications, technique descriptions and NCBI Gene records. Like all other
+    site report pages, this record is directly accessible through its
+    \texttt{db\_xref} link at \url{http://collectf.org/EXPSITE_000014c0}.}
 \label{fig:individual-site}
 \end{figure}
 
@@ -269,13 +274,13 @@ TF-binding site search and motif discovery~\citep{bailey2006meme}.
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/chapter2/motif-comparison}
-  \caption{Example of motif comparisons in CollecTF\@. Results of motif
-    comparisons using the pair-wise site Levenshtein distance for: (a) the
-    unrelated LexA-binding motifs of Firmicutes and Gammaproteobacteria and (b)
-    the related LexA-binding motifs of Firmicutes and Actinobacteria. The
-    analysis compares the pair-wise site Levenshtein distance between all site
-    pairs within and between motifs and reports statistical differences among
-    groups.}
+  \caption[Example of motif comparisons in CollecTF.]{Example of motif
+    comparisons in CollecTF\@. Results of motif comparisons using the pair-wise
+    site Levenshtein distance for: (a) the unrelated LexA-binding motifs of
+    Firmicutes and Gammaproteobacteria and (b) the related LexA-binding motifs
+    of Firmicutes and Actinobacteria. The analysis compares the pair-wise site
+    Levenshtein distance between all site pairs within and between motifs and
+    reports statistical differences among groups.}
 \label{fig:motif-comparison}
 \end{figure}
 
@@ -370,15 +375,17 @@ Pseudomonadaceae families.
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{figures/chapter2/dbxref}
-  \caption{Excerpt from a RefSeq genome file (\texttt{NC\_002505.1},
-    \textit{Vibrio cholerae} O1 biovar El Tor str. N16961 chromosome I)
-    detailing the annotation of a binding site for the transcription factor
-    VpsR. The annotation using the \texttt{protein\_bind} feature details the
-    site location and the experimental techniques used to identify it, as well
-    as direct links to the supporting literature. Genes regulated through
-    TF-binding at the site, if known, are also reported, together with the
-    binding protein using the \texttt{/bound\_moiety} field. The annotation
-    also provides a \texttt{/db\_xref} outlink to CollecTF.}
+  \caption[Excerpt from a RefSeq genome file (\textit{Vibrio cholerae} O1
+  biovar El Tor str. N16961 chromosome I).]{Excerpt from a RefSeq genome file
+    (\texttt{NC\_002505.1}, \textit{Vibrio cholerae} O1 biovar El Tor
+    str. N16961 chromosome I) detailing the annotation of a binding site for
+    the transcription factor VpsR. The annotation using the
+    \texttt{protein\_bind} feature details the site location and the
+    experimental techniques used to identify it, as well as direct links to the
+    supporting literature. Genes regulated through TF-binding at the site, if
+    known, are also reported, together with the binding protein using the
+    \texttt{/bound\_moiety} field. The annotation also provides a
+    \texttt{/db\_xref} outlink to CollecTF.}
   \label{fig:dbxref}
 \end{figure}
 
@@ -419,17 +426,18 @@ promotes long-term survival of the curated information.
     \subcaption{The CollecTF regulon record for Q87KN2}
   \end{subfigure}
 
-  \caption{CollecTF record for UniProtKB entry Q9KU59.  UniProtKB report pages
-    have multiple tabs, reporting binding sites before and after automatic
-    alignment, a summary page containing the sequence logo generated from the
-    multiple sequence alignment and motif statistics (motif structure,
-    regulatory mode, TF conformation and site type), links to external
-    databases and a detailed view. For each reported site, the detailed view
-    provides the binding sequence, chromosome and protein accessions, the
-    experimental evidence supporting its binding and regulatory effect, the
-    reference literature sources, the genomic neighborhood highlighting (using
-    a color code) regulated genes and a link to the curation record where users
-    can find additional information on the experimental process.}
+  \caption[CollecTF record for UniProtKB entry Q9KU59.]{CollecTF record for
+    UniProtKB entry Q9KU59.  UniProtKB report pages have multiple tabs,
+    reporting binding sites before and after automatic alignment, a summary
+    page containing the sequence logo generated from the multiple sequence
+    alignment and motif statistics (motif structure, regulatory mode, TF
+    conformation and site type), links to external databases and a detailed
+    view. For each reported site, the detailed view provides the binding
+    sequence, chromosome and protein accessions, the experimental evidence
+    supporting its binding and regulatory effect, the reference literature
+    sources, the genomic neighborhood highlighting (using a color code)
+    regulated genes and a link to the curation record where users can find
+    additional information on the experimental process.}
 \label{fig:uniprot-integration}
 \end{figure}
 
@@ -469,10 +477,12 @@ annotation.
 
 \begin{table}
 \centering
-\caption{Tabular schematic of the GO term identification guidelines for
-  generation of TF-centric annotations in the CollecTF curation process. The
-  guidelines define the GO terms to annotate given the experimental evidence
-  reported in the curated literature.}
+\caption[Tabular schematic of the GO term identification guidelines for
+generation of TF-centric annotations in the CollecTF curation process.]{Tabular
+schematic of the GO term identification guidelines for generation of TF-centric
+annotations in the CollecTF curation process. The guidelines define the GO
+terms to annotate given the experimental evidence reported in the curated
+literature.}
 \label{tab:go-terms}
 \renewcommand{\arraystretch}{1.4}
 \begin{tabular}{l|l|C|C|C|C|C|C|C|C|}
@@ -532,16 +542,17 @@ submission to the Gene Ontology Consortium.
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/chapter2/gpad}
-  \caption{Excerpt from the GPAD-formatted file generated by CollecTF, showing
-    TF-centric annotations corresponding to two curations. Each individual line
-    represents an annotation, with the relationship field denoting whether the
-    gene product specified by the UniProtKB identifier enables a molecular
-    function or is involved in a biological process. The specific function
-    supported by the evidence is defined by a GO ID, such as GO:0001217
-    (bacterial-type RNA polymerase transcriptional repressor activity,
-    sequence-specific DNA binding). The literature reference is indicated by
-    means of a PubMed ID, and the evidence supporting the annotation is
-    specified by an Evidence Ontology term, such as ECO:0001807
-    (electrophoretic mobility shift assay evidence used in manual assertion).}
+  \caption[Excerpt from the GPAD-formatted file generated by CollecTF.]{Excerpt
+    from the GPAD-formatted file generated by CollecTF, showing TF-centric
+    annotations corresponding to two curations. Each individual line represents
+    an annotation, with the relationship field denoting whether the gene
+    product specified by the UniProtKB identifier enables a molecular function
+    or is involved in a biological process. The specific function supported by
+    the evidence is defined by a GO ID, such as GO:0001217 (bacterial-type RNA
+    polymerase transcriptional repressor activity, sequence-specific DNA
+    binding). The literature reference is indicated by means of a PubMed ID,
+    and the evidence supporting the annotation is specified by an Evidence
+    Ontology term, such as ECO:0001807 (electrophoretic mobility shift assay
+    evidence used in manual assertion).}
 \label{fig:gpad}
 \end{figure}

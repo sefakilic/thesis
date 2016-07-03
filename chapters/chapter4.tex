@@ -143,14 +143,15 @@ distance between its source and the target genome.
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/chapter4/cgb_workflow}
-  \caption{The comparative genomics workflow implemented in CGB\@. Input TFBS
-    collections from reference species are combined to build a PSSM model for
-    each target species where the the site collection from each reference
-    species is weighted by its phylogenetic distance to the target
-    species. Upstream regions of predicted operons are PSSM-scored and
-    posterior probability of regulation for each operon is calculated. For each
-    orthologous group of genes, the likelihood of gene regulation in common
-    ancestors are inferred through ancestral state reconstruction.}
+  \caption[The comparative genomics workflow implemented in CGB.]{The
+    comparative genomics workflow implemented in CGB\@. Input TFBS collections
+    from reference species are combined to build a PSSM model for each target
+    species where the the site collection from each reference species is
+    weighted by its phylogenetic distance to the target species. Upstream
+    regions of predicted operons are PSSM-scored and posterior probability of
+    regulation for each operon is calculated. For each orthologous group of
+    genes, the likelihood of gene regulation in common ancestors are inferred
+    through ancestral state reconstruction.}
   \label{fig:pipeline}
 \end{figure}
 
@@ -453,7 +454,8 @@ the frequency of each state in 1,000 iterations (Figure~\ref{fig:asr}).
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{figures/chapter4/asr}
-  \caption{Ancestral state reconstruction for a group of orthologous genes.
+  \caption[Ancestral state reconstruction for a group of orthologous
+  genes.]{Ancestral state reconstruction for a group of orthologous genes.
     First, for each target species, the probabilities of each state is set
     based on posterior probability of gene regulation. If a given species has
     the copy of the gene, $P(s_1) = P(R|D)$, $P(s_0) = 1-P(R|D)$ and
@@ -497,22 +499,25 @@ functions (Figure~\ref{fig:gui-input} and~\ref{fig:gui-output}).
     \centering
     \includegraphics[width=0.6\textwidth]{figures/chapter4/input_config}
   \end{subfigure}
-  \caption{The input form contains the list of genomes under analysis,
-    reference TFBS collections and configuration parameters. For each target
-    genome, a user-defined name and accession numbers for its all chromosomes,
-    plasmids or contigs are entered. For each reference collection of binding
-    sites, the accession number of the protein and the list of sites are
-    entered. Finally, the configuration parameters, the method for calculating
-    the prior probability (inferring from collection sizes, combined binding
-    motif or manual entry), and whether binding motifs should be weighted by
-    site counts and phylogenetic proximity are set.}
+  \caption[The input form containing the list of genomes under analysis,
+  reference TFBS collections and configuration parameters.]{The input form
+    contains the list of genomes under analysis, reference TFBS collections and
+    configuration parameters. For each target genome, a user-defined name and
+    accession numbers for its all chromosomes, plasmids or contigs are
+    entered. For each reference collection of binding sites, the accession
+    number of the protein and the list of sites are entered. Finally, the
+    configuration parameters, the method for calculating the prior probability
+    (inferring from collection sizes, combined binding motif or manual entry),
+    and whether binding motifs should be weighted by site counts and
+    phylogenetic proximity are set.}
   \label{fig:gui-input}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/chapter4/output}
-  \caption{Table of ortholog groups as a part of CGB graphical interface
+  \caption[Table of ortholog groups as a part of CGB graphical interface
+  output.]{Table of ortholog groups as a part of CGB graphical interface
     output. Each row showing a group of orthologous genes from each species,
     their functions and calculated posterior probabilities of regulation. The
     table can be sorted and searched by the gene name, locus tag, function or
@@ -610,18 +615,20 @@ detect the two core elements of the SOS response (\textit{lexA} and
 \begin{figure}
   \centering
   \includegraphics[width=0.7\textwidth]{figures/chapter4/heatmap_single_motif}
-  \caption{The heatmaps showing the regulation in groups of orthologous
-    \textit{lexA} and \textit{recA} genes. Each row corresponds to an ortholog
-    group and organisms (columns) are grouped according to their phylogenetic
-    proximity estimated from LexA protein sequences. For each species and
-    orthologous group, the posterior probability of regulation is shown in
-    green-red shades where green indicates high probability of regulation and
-    red denotes low probability. Heatmaps show the results of using
-    Actinobacteria (top) and Firmicutes (bottom) LexA-binding motifs to search
-    for LexA-binding sites in all species under analysis. The results
-    illustrate that clade-specific LexA-binding sites are not generic enough to
-    detect binding sites upstream of core SOS response genes \textit{lexA} and
-    \textit{recA} in all the species under analysis.}
+  \caption[The heatmaps showing the regulation in groups of orthologous
+  \textit{lexA} and \textit{recA} genes.]{The heatmaps showing the regulation
+    in groups of orthologous \textit{lexA} and \textit{recA} genes. Each row
+    corresponds to an ortholog group and organisms (columns) are grouped
+    according to their phylogenetic proximity estimated from LexA protein
+    sequences. For each species and orthologous group, the posterior
+    probability of regulation is shown in green-red shades where green
+    indicates high probability of regulation and red denotes low
+    probability. Heatmaps show the results of using Actinobacteria (top) and
+    Firmicutes (bottom) LexA-binding motifs to search for LexA-binding sites in
+    all species under analysis. The results illustrate that clade-specific
+    LexA-binding sites are not generic enough to detect binding sites upstream
+    of core SOS response genes \textit{lexA} and \textit{recA} in all the
+    species under analysis.}
   \label{fig:heatmap_1}
 \end{figure}
 
@@ -650,7 +657,8 @@ genomes~\citep{erill2006dispersal}.
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/chapter4/heatmap}
-  \caption{The heatmap showing the regulation in selected groups of orthologous
+  \caption[The heatmap showing the regulation in selected groups of orthologous
+  genes.]{The heatmap showing the regulation in selected groups of orthologous
     genes. Each row corresponds to an ortholog group and organisms (columns)
     are grouped according to their phylogenetic proximity estimated from LexA
     protein sequences. For each species and orthologous group, the posterior
@@ -674,15 +682,18 @@ genomes~\citep{erill2006dispersal}.
     \caption{\textit{uvrX}}
     \label{fig:ASR-b}
   \end{subfigure}
-  \caption{Ancestral state reconstruction for LexA regulation of DNA
-    recombination/repair protein coding \textit{recA} and UV-damage repair
-    protein coding \textit{uvrX}. Having high posterior probabilities of
-    regulation across all species, \textit{recA} regulation is most likely to
-    be present in the most recent common ancestor (MRCA) of Firmicutes and
-    Actinobacteria. On the other hand, no \textit{uvrX} ortholog is found in
-    the Actinobacteria and in the Firmicutes \textit{C. acetobutylicum}. Absence of
-    \textit{uvrX} in species from both phyla suggests that this gene was not present in
-    the MRCA of both phyla, but was instead introduced after their split.}
+  \caption[Ancestral state reconstruction for LexA regulation of DNA
+  recombination/repair protein coding \textit{recA} and UV-damage repair
+  protein coding \textit{uvrX}.]{Ancestral state reconstruction for LexA
+    regulation of DNA recombination/repair protein coding \textit{recA} and
+    UV-damage repair protein coding \textit{uvrX}. Having high posterior
+    probabilities of regulation across all species, \textit{recA} regulation is
+    most likely to be present in the most recent common ancestor (MRCA) of
+    Firmicutes and Actinobacteria. On the other hand, no \textit{uvrX} ortholog
+    is found in the Actinobacteria and in the Firmicutes
+    \textit{C. acetobutylicum}. Absence of \textit{uvrX} in species from both
+    phyla suggests that this gene was not present in the MRCA of both phyla,
+    but was instead introduced after their split.}
   \label{fig:ASR}
  \end{figure}
 
