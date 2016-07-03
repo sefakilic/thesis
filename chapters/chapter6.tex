@@ -104,55 +104,61 @@ regulation in species of interest.
 \subsection{Development of a TFBS database}
 
 To capture the TF-DNA interaction data across all Bacteria domain, CollecTF, a
-database of experimentally validated binding sites was built. To ensure the
-data quality, CollecTF adopts a thorough process for the curation of
-publications that report evidence for TF binding and regulation of gene
-expression. In addition to in-house efforts for collecting data, it allows
-first-hand data submission from the experimental researchers. It provides fully
-customizable access to the stored data which can be browsed by TF and
-TF-family, taxonomy and experimental support. The available data is integrated
-with major biological sequence databases NCBI RefSeq and EMBL-EBI
-UniProtKB\-. CollecTF also generates GO annotations to formalize the relationship
-between a TF and the chromosomal DNA it binds and the genes upon which such
-binding has a transcriptional regulatory effect. Finally, the supporting experimental
-evidence is mapped to standardized Evidence Ontology terms.
+database of experimentally validated binding sites was built
+(Chapter~\ref{chap:collectf}). To ensure the data quality, CollecTF adopts a
+thorough process for the curation of publications that report evidence for TF
+binding and regulation of gene expression. In addition to in-house efforts for
+collecting data, it allows first-hand data submission from the experimental
+researchers. It provides fully customizable access to the stored data which can
+be browsed by TF and TF-family, taxonomy and experimental support. The
+available data is integrated with major biological sequence databases NCBI
+RefSeq and EMBL-RBI UniProtKB\-. CollecTF also generates GO annotations to
+formalize the relationship between a TF and the chromosomal DNA it binds and
+the genes upon which such binding has a transcriptional regulatory
+effect. Finally, the supporting experimental evidence is mapped to standardized
+Evidence Ontology terms.
 
 \subsection{Assessment of methods for motif and regulon transfer}
 
 The evaluation of motif transfer metrics showed that precision-recall (PR)
 area-under-the-curve (AUC) is a better measurement than widely-used receiver
-operating characteristic (ROC) AUC\@. The available transfer methods were
-benchmarked using the collected experimental binding site data. The results
-showed that motif-based methods that assume the conservation of the TF binding
-motif are consistently better at reconstructing the motif and regulon in target
-species than the network-based methods which assume the conservation of regulon
-composition. It was also found that the efficiency of the motif-based methods
-decreases sharply with increasing phylogenetic distance.
+operating characteristic (ROC) AUC\@
+(Figure~\ref{fig:transfer-evaluation-comparison}). The available transfer methods
+were benchmarked using the collected experimental binding site data. The
+results showed that motif-based methods that assume the conservation of the TF
+binding motif are consistently better at reconstructing the motif and regulon
+in target species than the network-based methods which assume the conservation
+of regulon composition (Figure~\ref{fig:comparison-transfer-methods}). It was also
+found that the efficiency of the motif-based methods decreases sharply with
+increasing phylogenetic distance.
 
 \subsection{Development of a comparative genomics framework}
 
 Leveraging the collected data and the benchmark of existing transfer methods,
 CGB, a comparative genomics framework for bacterial transcriptional regulation
-analysis was built. Unlike similar existing systems, it does not restrict the
-set of genomes that can be analyzed; any genome available at NCBI RefSeq
-database can be used for the analysis. In addition, CGB adopts a Bayesian
-approach to infer regulons in target genomes. Rather than reporting PSSM scores
-only, CGB computes posterior probability of regulation for each operon. It
-constructs orthologous groups of genes and performs ancestral state
-reconstruction for each orthologous group. In addition to results reported in a
-tabular format, the results are visualized as a heatmap where rows and columns
-correspond to orthologous groups and species, respectively. A given cell of the
-heatmap is colored based on the regulation state (regulation, not regulation or
-absence) of the corresponding gene. CGB is publicly available as a Python
-library and stand-alone tool with a graphical interface.
+analysis was built (Chapter~\ref{chap:cgb}). Unlike similar existing systems,
+it does not restrict the set of genomes that can be analyzed; any genome
+available at NCBI RefSeq database can be used for the analysis. In addition,
+CGB adopts a Bayesian approach to infer regulons in target genomes. Rather than
+reporting PSSM scores only, CGB computes posterior probability of regulation
+for each operon (Figure~\ref{fig:pipeline}). It constructs orthologous groups
+of genes and performs ancestral state reconstruction for each orthologous
+group. In addition to results reported in a tabular format, the results are
+visualized as a heatmap where rows and columns correspond to orthologous groups
+and species, respectively. A given cell of the heatmap is colored based on the
+regulation state (regulation, not regulation or absence) of the corresponding
+gene. CGB is publicly available as a Python library and stand-alone tool with a
+graphical interface.
 
 The platform was tested by replicating a previously published analysis of LexA
-regulation in the Firmicutes and the Actinobacteria. The analysis demonstrated the
-importance of combining TF binding motif from multiple species for better
-detection of binding sites in all target genomes. The results are consistent
-with the original analysis that was performed using other available
-tools. Furthermore, CGB was used to characterize and perform a comparative analysis
-of the Verrucomicrobia LexA. The analysis reported significant
+regulation in the Firmicutes and the Actinobacteria. The analysis demonstrated
+the importance of combining TF binding motif from multiple species for better
+detection of binding sites in all target genomes
+(Figure~\ref{fig:heatmap_1}). The results are consistent with the original
+analysis that was performed using other available tools
+(Figure~\ref{fig:heatmap_2}). Furthermore, CGB was used to characterize and
+perform a comparative analysis of the Verrucomicrobia LexA
+(Chapter~\ref{chap:verrucomicrobia}). The analysis reported significant
 differences in the size and composition of the LexA regulatory network of the
 Verrucomicrobia regulatory network.
 
