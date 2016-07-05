@@ -17,7 +17,7 @@ systems~\citep{tan2001comparative, makarova2001conservation,
   rodionov2013transcriptional}. A conventional TRN comparative genomics
 analysis typically involves three well-defined steps
 \citep{babu2008computational, gelfand2000comparative, baumbach2009reliable}. The
-first step consists in the transfer of available information on the regulatory
+first step consists of the transfer of available information on the regulatory
 network (i.e.\ known TF-binding sites and/or regulated genes) to the species
 under analysis, in order to infer the TF-binding motif in these target
 species. The second step involves a genome-wide search for putative TF-binding
@@ -35,7 +35,7 @@ a reference TRN can be transferred through the assumption of a conserved
 TF-binding motif, a conserved regulon, or a combination of the two
 \citep{babu2008computational, baumbach2010power}. As a consequence, several
 methods have been proposed to transfer regulatory information across
-species. The simplest approach, here called “direct transfer”, is to use the
+species. The simplest approach, here called “direct transfer”, uses the
 reference TF-binding motif to search for sites in the target genome. The target
 motif is hence implicitly defined as a subset of the highest scoring sites in
 that genome~\citep{tan2001comparative, makarova2001conservation,
@@ -83,7 +83,8 @@ distance, while mixed methods do not significantly improve the results of
 motif-based transfer methods. Our analysis also highlights the inadequacy of
 receiver-operating-characteristic (ROC) curves in heavily unbalanced settings
 and indicates that the precision-recall (PR) area-under-the-curve (AUC) is the
-most informative statistic for assessment of transfer results. We evaluate
+most informative statistic for assessment of transfer
+results~\citep{lewis1991evaluating, zweig1993receiver}. We evaluate
 predictive measures for transfer accuracy and discuss their applicability in
 the context of comparative genomics analysis.
 
@@ -166,7 +167,7 @@ based on the position-specific frequency matrix (PSFM) defined by the motif
 \citep{gupta2007quantifying}, and on two standard metrics for classification
 accuracy based on the area-under-the-curve (AUC) derived from a TF-binding site
 search process: the receiver-operating-characteristic (ROC) AUC and the
-precision-recall (PR) AUC~\citep{lewis1991evaluating, zweig1993receiver}. To
+precision-recall (PR) AUC. To
 assess the efficacy of each method at discriminating the effectiveness of TRN
 transfer, we simulated transfers by defining inferred motifs as noisy
 pseudo-replicates or permutations of the known collection of binding sites in
