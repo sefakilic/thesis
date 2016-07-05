@@ -3,21 +3,21 @@
 
 \section{Transcriptional Regulation}
 
-In 3.5 billion years, evolution has tinkered with life on Earth and several
+In 3.5 billion years, several
 cellular mechanisms have evolved for living things to sense and react to
 ever-changing conditions in their environment, such as temperature, nutrient
 availability or presence of toxic compounds. The fundamental way for organisms
-to respond to such environmental changes at the cell level by regulating
-gene expression: controlling the production rate of gene products.
+to respond to such environmental changes at the cell level is by regulating
+gene expression and controlling the production rate of gene products.
 
 There are a variety of mechanisms to control gene expression at different
-levels of gene product synthesis, such as the regulation of transcriptional
+levels, such as the regulation of transcription
 initiation, post-transcriptional RNA interference, and post-translational
 proteolysis~\citep{snyder2007molecular}. Genomic features such as gene copy
 number, guanine-cytosine (GC) content, and codon usage patterns also affect the
 regulation of gene expression~\citep{gustafsson2004codon,
   stranger2007relative}. Probably the most common mechanism employed by all
-cellular systems is the regulation of transcriptional
+cellular systems is the regulation of transcription
 initiation~\citep{browning2004regulation}. This is not surprising, because
 regulation of transcription initiation is the most economical way for a cell to
 control the expression level of its genes~\citep{malacinski2005essentials}. The
@@ -33,8 +33,8 @@ polymerase to its promoter region~\citep{reznikoff1985regulation}. A TF
 recognizes and binds to specific DNA sequences, called transcription factor
 binding sites (TFBS), that are of length 10--20 bp~\citep{gerland2002physical,
   berg2004adaptive} and mostly located between -60 and +60 base pairs (bp)
-relative to the transcriptional start site~\citep{collado1991control}. This set
-of similar, but not identical, TF binding sites describes the binding pattern
+relative to the transcriptional start site~\citep{collado1991control}. The set
+of similar, but not identical TF binding sites describes the binding pattern
 that the TF looks for binding, known as transcription factor binding motif. An
 example of sequences recognized by TF, the binding sites of the hypothetical
 protein Hyp is given in Table~\ref{tab:lexa-motif}.
@@ -55,7 +55,8 @@ protein Hyp is given in Table~\ref{tab:lexa-motif}.
 
 \subsection{Representation of TF binding motifs}
 
-The classical representation of a binding motif is the consensus sequence, the
+The classic representation of a binding motif is the consensus sequence, which
+is the
 sequence of the most frequent base at each position of the aligned binding
 sites~\citep{pierce2012genetics}. The consensus sequence for the binding motif
 in Table~\ref{tab:lexa-motif} is \texttt{AGGTAAACCT}. Although consensus
@@ -67,19 +68,18 @@ does not say anything about the frequency of bases. It is equally likely that
 the position might contain 95\% A or it could have 51\% A and 49\% T. The
 problem occurs when one looks for additional binding sites using the consensus
 sequence.  If no mismatch is allowed, almost half of acceptable sequences could
-be missed in the case of 51\% A and 49\% T. For example, -10 region of
+be missed in the case of 51\% A and 49\% T. For example, the -10 region of many
 bacterial promoters has the consensus sequence \texttt{TATAAT}, also known as
-Pribnow box~\citep{pribnow1975nucleotide}. However,  very few promoters
+Pribnow box~\citep{pribnow1975nucleotide}, however very few promoters
 contain the exact consensus sequence~\citep{lisser1993compilation}. Even when
 mismatches are allowed, allowing a mismatch in a very well-conserved column
 is equivalent to allowing a mismatch in a position that is not
 conserved. A better representation of the binding motif that captures more
-information is known as Position Specific Frequency Matrix (PSFM).
+information is known as Position Specific Frequency Matrix (PSFM)~\citep{stormo2000dna}.
 
-A PSFM is a $4 \times L$ matrix, containing one row for each base and one
-column for each position of the alignment. Each entry of the PSFM, $f_{i, j}$,
-is the observed relative frequency of the base $i$ in $j$th column of the
-alignment:
+A PSFM contains one row for each base and one column for each position of the
+alignment. Each entry of the PSFM, $f_{i, j}$, is the observed relative
+frequency of the base $i$ in $j$th column of the alignment:
 
 \begin{equation}
   \label{eq:psfm}
@@ -112,7 +112,7 @@ T & 0.20 & 0.07 & 0.00 & 1.00 & 0.07 & 0.20 & 0.00 & 0.00 & 0.07 & 0.53 \\
 Given a binding site of length $L$, the odds of it being a functional binding
 site can be calculated by first transforming the PSFM into a Position Specific
 Weight Matrix (PSWM), also known as Position Specific Scoring Matrix
-(PSSM). Each entry of the PSSM is defined as
+(PSSM)~\citep{stormo2000dna}. Each entry of the PSSM is defined as
 
 \begin{equation}
   \label{eq:pssm}
@@ -148,9 +148,10 @@ T & -0.32 & -1.91 & -334.10 &  2.00   & -1.91 & -0.32 & -334.10 & -334.10 &  -1.
 
 \subsection{Information content of TF binding motifs}
 
-By applying Shannon’s information theory~\citep{shannon1948mathematical} to TF
-binding motifs, entropy, the uncertainty of observing any particular base in
-the genomic background is defined as:
+Shannon’s information theory~\citep{shannon1948mathematical} can be applied to
+compute the efficiency of protein binding to DNA~\citep{schneider2010brief}.
+The uncertainty of observing any particular base in the genomic background is
+defined as:
 
 \begin{equation}
   \label{eq:hg}
@@ -171,7 +172,7 @@ base in that position~\citep{schneider1986information}.
   \label{eq:rseq}
   R_{seq}(j) = H_g - H_m(j)
 \end{equation}
-And finally, assumping positional independence, the total IC of the motif is
+And finally, assuming positional independence, the total IC of the motif is
 
 \begin{equation}
   \label{eq:1}
@@ -196,7 +197,7 @@ motif in Table~\ref{tab:lexa-motif} is given in Figure~\ref{fig:lexa}.
 
 \section{Evolution of Transcriptional Regulatory Elements}
 
-The interaction between a TF and its binding sites is essential for
+The interaction between a TF and its binding sites is essential for transcriptional
 regulation. To maintain the regulatory interaction, a mutation in one of these
 elements (i.e. TF or its binding sites) must be counterbalanced by a change in
 the other element. This co-evolution between TFs and their binding motifs has
@@ -262,15 +263,15 @@ increasing amount of the available experimental TFBS data challenges the
 underlying definition and the collection process of TF-binding site
 data~\citep{salgado2013regulondb}. Although there are well-established
 eukaryotic TF-binding site databases~\citep{mathelier2015jaspar,
-  matys2003transfac}, their counterparts in Bacteria domain are mostly
+  matys2003transfac}, their counterparts for the Bacteria domain are mostly
 organism-specific~\citep{salgado2013regulondb, sierro2008dbtbs,
   jacques2005mtbreglist, pauling2012coryneregnet}. Some of these databases have
-not been updated in several years, thereby missing huge amounts of
+not been updated in several years, thereby missing significant amount of
 data~\citep{munch2003prodoric}. Also, these databases often mix experimentally
 validated sites with computationally predicted
 ones~\citep{kazakov2007regtransbase}, introducing biases in the machine learning
 and comparative genomics techniques that depend on them to model TF-binding
-site interactions. Closing the circle, the putative binding sites identified by
+site interactions. The putative binding sites identified by
 these biased methods are captured by the databases and mixed with the
 experimentally-verified ones, introducing further bias.
 
@@ -389,7 +390,7 @@ hypotheses on TF regulation.
 capture the interaction of TFs with their target sites led to CollecTF, a
 database of TFBS in the Bacteria domain~\citep{kilic2013collectf,
   kilicc2016data}. CollecTF compiles data on experimentally validated,
-naturally occurring TFBS across the Bacteria domain, placing great emphasis on
+naturally occurring TFBS across the Bacteria domain, placing emphasis on
 the curation process, the quality and availability of the stored data and fully
 customizable access to its records. It integrates multiple sources of evidence
 automatically and openly, allowing users dynamically to redefine binding motifs
@@ -400,8 +401,8 @@ literature. Since its inception, CollecTF has progressively become a portal for
 the annotation and submission of information on transcriptional regulatory
 elements to major biological resources such as RefSeq~\citep{o2015reference},
 UniProtKB~\citep{uniprot2014uniprot}, and the Gene Ontology
-Consortium~\citep{gene2013gene}. As a database, it provides enhanced search and
-browsing, targeted data exports, binding motif analysis tools and integration
+Consortium~\citep{gene2013gene}. As a database, it provides enhanced searching and
+browsing, targeted data exports, binding motif analysis tools, and integration
 with motif discovery and search platforms.
 
 \textit{Benchmarking of TF binding motif and regulon transfer methods.}  As
@@ -423,18 +424,18 @@ sequence similarity can yield confounding results as an indicator of transfer
 efficiency for motif-based methods.
 
 \textit{Development of a comparative genomics analysis platform.} Following the
-compilation of data and assessment of transfer methods, CGB, a comparative
-genomics platform for the analysis of TRNs in Bacteria domain, was
+compilation of data and assessment of transfer methods, a comparative
+genomics platform for the analysis of TRNs in Bacteria domain (CGB) was
 developed. Given a set of TFBS collections from multiple species and a group of
 target genomes, CGB builds a PSSM model, adjusted for each target genome by
 weighting the evidence from each reference species according to their
 phylogenetic distances. It predicts operons on each target genome and scores
-their promoter regions using adjusted PSSMs. In addition to identifying binding
-sites with high scores, for a given promoter, CGB adopts a Bayesian framework,
-combining all positional scores and integrating the prior belief of regulation
-into a posterior probability of TF binding to the promoter region and hence putative
-regulation of the operon. Following the posterior probability computation for
-each operon, CGB identifies orthologous groups of regulated genes and performs
+their promoter regions using adjusted PSSMs. CGB combines all positional
+binding site scores and the prior belief of regulation into a posterior
+probability of TF binding to the promoter region of a given promoter and hence
+putative regulation of the operon. Following the posterior probability
+computation for each operon, CGB identifies orthologous groups of regulated
+genes and performs
 ancestral state reconstruction for each ortholog group to infer the state
 (i.e.\ regulation, no regulation or absence of the gene) in common ancestors of
 species under analysis. Its utility was demonstrated by performing a
@@ -499,15 +500,16 @@ knowledge, and this trade-off between the amount of information and its quality
 is necessary in order to perform proper machine learning and comparative
 genomics analyses.
 
-The most popular model used to approximate specific TF-DNA interactions is the
-PSSM\@. A PSSM assumes independence among its different columns. Many studies
-have reported that this assumption does not hold true~\citep{man2001non,
-  bulyk2002nucleotides, tomovic2007position, osada2004comparative} and others
-report that the additive PSSM model is a very good approximation of the
-protein-DNA binding~\citep{benos2002additivity}. Despite the arguments on both
-sides and the existence of many different types of algorithms including
-biophysical models~\citep{stormo1998specificity, djordjevic2003biophysical} and
-Hidden Markov Models~\citep{sinha2003probabilistic, drawid2009ohmm,
+The most common model used to approximate specific TF-DNA interactions is the
+PSSM~\citep{stormo2000dna, sharon2008feature}. A PSSM assumes independence among
+its different columns. Many studies have reported that this assumption does not
+hold true~\citep{man2001non, bulyk2002nucleotides, tomovic2007position,
+  osada2004comparative} and others report that the additive PSSM model is a
+very good approximation of the protein-DNA
+binding~\citep{benos2002additivity}. Despite the arguments on both sides and
+the existence of many different types of algorithms including biophysical
+models~\citep{stormo1998specificity, djordjevic2003biophysical} and Hidden
+Markov Models~\citep{sinha2003probabilistic, drawid2009ohmm,
   salzberg1998microbial}, the PSSM is still the standard model for predicting
 binding sites. Although the positional independence assumption can be relaxed
 with more complex models~\citep{ben2005identification, zhao2012improved,
@@ -533,12 +535,16 @@ of the data and each transfer method used.
 Chapter 4 and 5 focus on the comparative genomics analysis of transcriptional
 regulatory networks. Chapter 4 describes CGB, the developed comparative
 genomics analysis platform. It details each step of the pipeline, from input
-processing to visualization and reporting of the results. Chapter 5 studies the
-LexA-binding motif of the Verrucomicrobia, a recently established bacterial
-phylum of growing interest due to the association of Verrucomicrobia species
-with several eukaryotic hosts~\citep{sait2011genomic}, their prominence in many
-soil communities~\citep{bergmann2011under} and a significant role in the
-adaptability of the human gut microbiome~\citep{dubourg2013high}. In chapter 5,
-using CGB, the evolutionary analysis of the SOS response in this phylum is
-performed, providing novel insights into the molecular mechanisms driving its
-evolution.
+processing to visualization and reporting of the results.
+
+Chapter 5 studies the LexA-binding motif of the Verrucomicrobia, a recently
+established bacterial phylum of growing interest due to the association of
+Verrucomicrobia species with several eukaryotic hosts~\citep{sait2011genomic},
+their prominence in many soil communities~\citep{bergmann2011under} and a
+significant role in the adaptability of the human gut
+microbiome~\citep{dubourg2013high}. The evolutionary analysis of the SOS
+response in this phylum is performed using CGB, providing novel insights into the
+molecular mechanisms driving its evolution.
+
+Chapter 6 concludes this dissertation and discusses its limitations and
+outlines directions for future work.
