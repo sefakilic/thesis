@@ -647,7 +647,7 @@ used to compute its position-specific frequency matrix (PSFM). The similarity
 between the two PSFM is evaluated using either the Euclidean distance or the
 Kullback–Leibler (KL) divergence of the inferred motif from the known target
 motif~\citep{gupta2007quantifying}. The distance between ungapped alignment of
-columns from two PSFMs is computed by summing the column comparison scores
+columns from two PSFM is computed by summing the column comparison scores
 computed using the Euclidean distance or the KL divergence. The Euclidean
 distance for two PSFM columns $X$ and $Y$ from two motifs is defined as:
 \begin{equation}
@@ -662,16 +662,41 @@ equation:
 \end{equation}
 where $X_a$ refers to the probability of letter $a\in\mathcal{A}$ in $X$.
 
-Performance metrics evaluate the ability of
-the inferred motif to retrieve the known target sites when searching an equal
-number of promoter regions from the target genome containing, and not
-containing, known sites. To assess true positives, the maximum IC alignment
-between target and inferred collections is used to compute the offset between
-predicted and known sites. The accuracy of the search using the inferred
-TF-binding motif is then evaluated as the area-under-the-curve (AUC) of the
-receiver-operator-characteristic (ROC) or precision-recall (PR) curve, computed
-with the scikit-learn Python library functions~\citep{lewis1991evaluating,
-  zweig1993receiver, scikit-learn}.
+Performance metrics evaluate the ability of the inferred motif to retrieve the
+known target sites when searching an equal number of promoter regions from the
+target genome containing, and not containing, known sites. To assess true
+positives, the maximum IC alignment between target and inferred collections is
+used to compute the offset between predicted and known sites. The accuracy of
+the search using the inferred TF-binding motif is then evaluated as the
+area-under-the-curve (AUC) of the receiver-operator-characteristic (ROC) or
+precision-recall (PR) curve, computed with the scikit-learn Python library
+functions~\citep{lewis1991evaluating, zweig1993receiver, scikit-learn}. The ROC
+curve is created by plotting the False Positive Rate (FPR) on the $x$-axis and
+the True Positive Rate (TPR) on the $y$-axis. The PR curve is created by
+plotting Recall (same as TPR) on the $x$-axis and Precision on the $y$-axis
+(Table~\ref{tab:confusion-matrix} and Equation~\ref{eq:confusion}).
+
+\begin{table}
+  \centering
+  \caption{Confusion matrix}
+  \label{tab:confusion-matrix}
+  \begin{tabular}{c|c|c|}
+    & actual positive & actual negative \\
+    \hline
+    predicted positive & $TP$ & $FP$ \\
+    \hline
+      predicted negative & $FN$ & $TN$ \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{eqnarray}
+  \textrm{Recall} & = &\frac{TP}{TP+FN} \nonumber\\
+  \textrm{Precision} & = &\frac{TP}{TP+FP} \nonumber\\
+  \textrm{True Positive Rate} & = & \frac{TP}{TP+FN} \nonumber\\
+  \textrm{False Positive Rate} & = & \frac{FP}{FP+TN}
+\label{eq:confusion}
+\end{eqnarray}
 
 Control experiments for TRN transfer were generated in two different
 ways. Noisy transfers were simulated by defining the inferred motif as a
