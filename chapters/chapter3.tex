@@ -165,7 +165,23 @@ efficiency of the inferred motif at retrieving the known TF-binding sites in a
 genome search. Here we focused on the Euclidean distance and the
 Kullback–Leibler (KL) divergence as well-established motif comparison functions
 based on the position-specific frequency matrix (PSFM) defined by the motif
-\citep{gupta2007quantifying}, and on two standard metrics for classification
+\citep{gupta2007quantifying}. The distance between ungapped alignment of
+columns from two motifs is computed by summing the column comparison scores
+computed using the Euclidean distance or the KL divergence. The Euclidean
+distance for two PSFM columns $X$ and $Y$ from two motifs is defined as:
+\begin{equation}
+\mathrm{ED}(X, Y) = -\sqrt{\sum_{a\in\mathcal{A}} (X_a - Y_a)^2}
+\end{equation}
+The KL divergence for two columns $X$ and $Y$ is given by the following
+equation:
+\begin{equation}
+\mathrm{KLD}(X,Y) =
+\frac{1}{2}\left[\sum_{a\in\mathcal{A}}X_a\log\left(\frac{X_a}{Y_a}\right) +
+                 \sum_{a\in\mathcal{A}}Y_a\log\left(\frac{Y_a}{X_a}\right)\right]
+\end{equation}
+where $X_a$ refers to the probability of letter $a\in\mathcal{A}$ in $X$.
+
+We use two standard metrics for classification
 accuracy based on the area-under-the-curve (AUC) derived from a TF-binding site
 search process: the receiver-operating-characteristic (ROC) AUC and the
 precision-recall (PR) AUC. To
